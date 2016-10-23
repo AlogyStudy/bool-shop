@@ -6,18 +6,23 @@
 
 	require('./include/init.php');
 	
-	$conf = conf::getIns();
+	Log::write('基础');
 	
-	// 读取选项
-	echo $conf->host; 
-	echo $conf->user;
+	class Mysql {
+		public function query ( $sql ) {
+			// 查询
+			// 记录
+			Log::write($sql);
+		}
+	}
+
+	$mysql = new Mysql();
 	
-	var_dump($conf->template_dir);
+	for ( $i=0; $i<1000; $i++ ) {
+		$sql = "select goods_id, goods_name, shop_price where goods_id" . mt_rand(1, 1000);
+		$mysql->query($sql);
+	}
 	
-	// 动态追加选项
-	$conf->template_dir = 'D:/www/smarty';
-	
-	echo $conf->template_dir; 
-	
+	echo '执行完成';
 
 ?>

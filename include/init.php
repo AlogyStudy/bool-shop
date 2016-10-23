@@ -16,7 +16,7 @@ define('DEBUG', true);
 // 引入配置文件
 require(ROOT . 'include/db.class.php'); // 数据库类
 require(ROOT . 'include/conf.class.php'); // 配置文件类
-
+require(ROOT . 'include/log.class.php'); // 日志类
 
 // 过滤参数，用递归的方式 过滤 $_GET,$_POST, $_COOKIE 
 
