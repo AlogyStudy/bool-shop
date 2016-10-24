@@ -1,3 +1,5 @@
+<meta charset="UTF-8" />
+
 <?php
 
 	/**
@@ -19,8 +21,9 @@
 	$mysql = new Mysql();
 	
 	for ( $i=0; $i<1000; $i++ ) {
-		$sql = "select goods_id, goods_name, shop_price where goods_id" . mt_rand(1, 1000);
+		$sql = "select goods_id, goods_name, shop_price from goods, select goods_id, goods_name, shop_price from goods,select goods_id, goods_name, shop_price from goods,select goods_id, goods_name, shop_price from goods,select goods_id, goods_name, shop_price from goods,select goods_id, goods_name, shop_price from goods,select goods_id, goods_name, shop_price from goods,select goods_id, goods_name, shop_price from goods,select goods_id, goods_name, shop_price from goods,select goods_id, goods_name, shop_price from goods,select goods_id, goods_name, shop_price from goods,select goods_id, goods_name, shop_price from goods,select goods_id, goods_name, shop_price from goods where goods_id=" . mt_rand(1, 1000);
 		$mysql->query($sql);
+		usleep(10000);
 	}
 	
 	echo '执行完成';

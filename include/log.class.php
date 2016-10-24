@@ -26,7 +26,6 @@
 			
 			// 判断日志是否备份
 			$log = self::isBak(); // 计算出日志文件的地址
-			
 			$fh = fopen($log, 'a');
 			
 			// 写入文件
@@ -41,8 +40,9 @@
 		 * 原理： 把原来的日志文件，改个名字，存储起来。
 		 */
 		public static function bak() {
+			
 			// 改成 年-月-日.bak 这种文件格式
-			$log = ROOT . 'data/log.curr.log';
+			$log = ROOT . 'data/log/' . self::LOGFILE;
 			$bak = ROOT . 'data/log' . date('ymd') . mt_rand(10000, 999999) . '.bak';
 			return rename($log, $bak);
 			
@@ -54,20 +54,22 @@
 		 */
 		public static function isBak() {
 			
-				$log = ROOT . 'data/log/curr.log';
+				$log = ROOT . 'data/log/' . self::LOGFILE;
 				
-				if ( file_exists($log) ) { // 文件不存在
+				if ( !file_exists($log) ) { // 文件不存在
 					touch($log); // touch 快速建立文件
 					return $log;
 				}
 				
 				// 判断大小
+				// 清除缓存
+				clearstatcache(true, $log);
 				$size = filesize($log);
-				if ( $size <= 1024 * 1024 ) { 
+				if ( $size <= 1024 * 1024 ) { // > 1M  
 					return $log;
 				};
 				
-				// 大于  1M
+				// < 1M
 				if ( !self::bak() ) {
 					return $log;
 				} else {
@@ -78,5 +80,4 @@
 		}
 		
 	}
-
 ?>
