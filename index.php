@@ -8,7 +8,15 @@
 
 	require('./include/init.php');
 
-	print_r($_GET);	
+	
+	$mysql = Mysql::getIns();
+	
+	$t1 = $_GET['t1'];
+	$t2 = $_GET['t2'];
+	
+//	$sql = "insert into test(t1, t2) values('$t1', '$t2')";
+
+//	var_dump($mysql->autoExecute('test', $_GET, 'insert'));
 	
 	
 	

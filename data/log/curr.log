@@ -1,0 +1,93 @@
+use boolshop
+set names utf8
+insert into test(t1, t2) values('zf', 'ryo')
+use boolshop
+set names utf8
+insert into test(t1, t2) values('zf', 'ryo')
+use boolshop
+set names utf8
+insert into test(t1, t2) values('z\"\"f', 'r\'\'yo')
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('z\"\"f','xixihaha')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into test (0,1) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+insert into test (0,1) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into test (0,1) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+insert into test (0,1) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+insert into test (0,1) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+insert into test (0,1) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+insert into test (0,1) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+insert into test (0,1) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+insert into test (0,1) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into test (0,1) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+insert into test (0,1) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+insert into test (0,1) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into test (0,1) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+insert into test (0,1) values ('adminuser','adminuser')
+use boolshop
+set names utf8
+insert into test (0,1) values ('frountuser','frountuser')
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('frontuser','frontuser')
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('adminuser','adminuser')
