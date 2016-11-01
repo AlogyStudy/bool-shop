@@ -1,15 +1,8 @@
 <?php
 
-	class TestModel {
+	class TestModel extends Model {
 		
 		protected $table = 'test';
-		protected $db = NULL;
-		
-		public function __construct() {
-			
-			$this->db = Mysql::getIns();
-			
-		}
 		
 		/**
 		 * 用户注册
@@ -19,8 +12,13 @@
 			
 			return $this->db->autoExecute($this->table, $data);
 			
-		}	 
+		}	
 		
+		// 取所有的数据
+		public function select() {
+			return $this->db->getAll('select * from' . $this->table);
+		} 
+		 
 		
 	}
 

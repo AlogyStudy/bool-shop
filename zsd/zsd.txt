@@ -67,3 +67,12 @@ PHP.exe 结束进程
 在1次的进程中，filesize(); 的结果会被缓存。(很多文件信息获取函数的结果，都会被缓存，如filemtime);
 
 
+
+
+# MVC
+
+controller 负责响应用户，调度Model/View 不负责SQL和样式
+model 操作数据库 不针对数据的合法，如$_GET做检验
+view 一般没含逻辑，只负责输出
+
+

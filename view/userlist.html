@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<table border="1">
+			<tr>
+				<th>ONE</th>
+				<th>TWO</th>
+			</tr>
+			<?php foreach( $list as $v ) {?>
+			<tr>
+				<td><?php echo $v['t1']; ?></td>
+				<td><?php echo $v['t2']; ?></td>
+			</tr>
+			<?php } ?>
+		</table>
+		
+	</body>
+</html>

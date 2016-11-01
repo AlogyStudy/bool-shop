@@ -19,6 +19,7 @@ require(ROOT . 'include/conf.class.php'); // 配置文件类
 require(ROOT . 'include/log.class.php'); // 日志类
 require(ROOT . 'include/lib_base.php'); // 基础函数
 require(ROOT . 'include/mysql.class.php'); // 引入Mysql类.
+require(ROOT . 'Model/Model.class.php'); 
 require(ROOT . 'Model/TestModel.class.php');
 
 
