@@ -95,3 +95,126 @@ use boolshop
 set names utf8
 use boolshop
 set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('frontuser','frontuser')
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('frontuser','frontuser')
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('frontuser','frontuser')
+use boolshop
+set names utf8
+insert into test (t1,t2) values ('frontuser','frontuser')
+use boolshop
+set names utf8
+select * fromtest
+use boolshop
+set names utf8
+select * fromtest
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test
+use boolshop
+set names utf8
+select * from test

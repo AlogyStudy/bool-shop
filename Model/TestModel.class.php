@@ -16,7 +16,9 @@
 		
 		// 取所有的数据
 		public function select() {
-			return $this->db->getAll('select * from' . $this->table);
+			
+			return $this->db->getAll('select * from ' . $this->table);
+			
 		} 
 		 
 		

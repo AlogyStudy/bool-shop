@@ -7,7 +7,6 @@
 	 */
 
 	require('./include/init.php');
-
 	
 	$mysql = Mysql::getIns();
 	
@@ -16,7 +15,6 @@
 	
 //	$sql = "insert into test(t1, t2) values('$t1', '$t2')";
 
-//	var_dump($mysql->autoExecute('test', $_GET, 'insert'));
 	
 	
 	

@@ -141,6 +141,7 @@
 			$rs = $this->query($sql);
 			
 			$list = array();
+			
 			while ( $row = mysql_fetch_array($rs) ) {
 				$list[] = $row;
 			}
