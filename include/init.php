@@ -4,7 +4,9 @@
 file init.php
 作用：框架初始化
  */
-  
+
+defined('ACC') || exit('ACC Denied'); 
+   
 // 初始化当前的绝对路径
 
 // echo substr(str_replace('\\', '/', __FILE__), 0, -8);

@@ -1,9 +1,10 @@
 <?php
-
+	
 	/**
 	 * 系统基础函数
 	 */
 
+  defined('ACC') || exit('ACC Denied');	
 	 
 	/**
 	 * 递归转义数组

@@ -1,5 +1,7 @@
 <?php
 
+	defined('ACC') || exit('ACC Denied');
+
 	/**
 	 * Mysql Class
 	 */

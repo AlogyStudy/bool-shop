@@ -1,5 +1,7 @@
 <?php
-
+	
+	defined('ACC') || exit('ACC Denied');
+	
 	/**
 	 * file conf.class.php
 	 * 配置文件读写类

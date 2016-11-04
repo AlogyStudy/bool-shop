@@ -232,3 +232,18 @@ insert into cate (catename,intro) values ('xx','xixihaha')
 use boolshop
 set names utf8
 insert into cate (catename,intro) values ('xx','xixihaha')
+use boolshop
+use boolshop
+set names utf8
+set names utf8
+use boolshop
+set names utf8
+insert into cate (catename,intro) values ('asdf','aiaiaiaiai')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into cate (catename,intro) values ('pink','tantatan')
+use boolshop
+set names utf8
+insert into cate (catename,intro) values ('pink','tantatan')

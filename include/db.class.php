@@ -3,6 +3,8 @@
 	// file db.class.php
 	// 数据库类
 	
+	defined('ACC') || exit('ACC Denied');
+		
 	abstract class Db {
 		/**
 		 * 连接服务器

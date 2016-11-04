@@ -1,5 +1,7 @@
 <?php
-
+	
+	defined('ACC') || exit('ACC Denied');
+	
 	// file log.class.php
 	// 记录信息到日志
 	
