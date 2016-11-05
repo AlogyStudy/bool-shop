@@ -1,11 +1,9 @@
 <?php
-	
+
 	define('ACC', true);
 	
 	require('../include/init.php');
 	
-	include(ROOT . 'view/admin/templates/left.html');
+	include(ROOT . 'view/admin/templates/top.html');
 	
-	
-
 ?>

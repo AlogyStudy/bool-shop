@@ -1,249 +1,191 @@
 use boolshop
 set names utf8
-insert into test(t1, t2) values('zf', 'ryo')
+insert into category (cat_name,intro,parent_id) values ('男士正装','男士，男士正装，正装','0')
 use boolshop
 set names utf8
-insert into test(t1, t2) values('zf', 'ryo')
+insert into category (cat_name,intro,parent_id) values ('男士正装','男士，男士正装，正装','0')
 use boolshop
 set names utf8
-insert into test(t1, t2) values('z\"\"f', 'r\'\'yo')
+insert into category (cat_name,intro,parent_id) values ('女士正装','女士，女士正装，正装','0')
 use boolshop
 set names utf8
-insert into test (t1,t2) values ('z\"\"f','xixihaha')
+select cat_id, cat_name, intro from category
 use boolshop
 set names utf8
+select cat_id, cat_name, intro from category
 use boolshop
 set names utf8
+select cat_id, cat_name, intro from category
 use boolshop
 set names utf8
+select cat_id, cat_name, intro from category
 use boolshop
 set names utf8
+insert into category (cat_name,intro,parent_id) values ('男士商务','商务','1')
 use boolshop
 set names utf8
+select cat_id, cat_name, intro from category
 use boolshop
 set names utf8
+insert into category (cat_name,intro,parent_id) values ('女士商务','商务','2')
 use boolshop
 set names utf8
+select cat_id, cat_name, intro from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('adminuser','adminuser')
+select cat_id, cat_name, intro from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('adminuser','adminuser')
+select cat_id, cat_name, intro from category
 use boolshop
 set names utf8
+select cat_id, cat_name, intro from category
 use boolshop
 set names utf8
+select cat_id, cat_name, intro from category
 use boolshop
 set names utf8
+select cat_id, cat_name, intro, parent_id from category
 use boolshop
 set names utf8
+select cat_id, cat_name, intro, parent_id from category
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('adminuser','adminuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('adminuser','adminuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('adminuser','adminuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('adminuser','adminuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('adminuser','adminuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('adminuser','adminuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('adminuser','adminuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('adminuser','adminuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('adminuser','adminuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('adminuser','adminuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('adminuser','adminuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('adminuser','adminuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (0,1) values ('frountuser','frountuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (t1,t2) values ('frontuser','frontuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (t1,t2) values ('adminuser','adminuser')
+select cat_id, cat_name, parent_id fromcategory
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id fromcategory
 use boolshop
 set names utf8
 use boolshop
 set names utf8
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
+delete fromcategorywhere cat_id=4
 use boolshop
 set names utf8
+delete fromcategorywhere cat_id=4
 use boolshop
 set names utf8
+delete fromcategorywhere cat_id=4
 use boolshop
 set names utf8
+delete fromcategorywhere cat_id=0
 use boolshop
 set names utf8
+delete fromcategorywhere cat_id=0
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (t1,t2) values ('frontuser','frontuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (t1,t2) values ('frontuser','frontuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-insert into test (t1,t2) values ('frontuser','frontuser')
+delete fromcategorywhere cat_id=4
 use boolshop
 set names utf8
-insert into test (t1,t2) values ('frontuser','frontuser')
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-select * fromtest
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-select * fromtest
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
 use boolshop
 set names utf8
 use boolshop
 set names utf8
-select * from test
+select cat_id, cat_name, parent_id from category
 use boolshop
 set names utf8
-select * from test
+delete from category where cat_id=4
 use boolshop
 set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-select * from test
-use boolshop
-set names utf8
-use boolshop
-set names utf8
-insert into cate (catename,intro) values ('xx','xixihaha')
-use boolshop
-set names utf8
-insert into cate (catename,intro) values ('xx','xixihaha')
-use boolshop
-set names utf8
-insert into cate (catename,intro) values ('xx','xixihaha')
-use boolshop
-set names utf8
-insert into cate (catename,intro) values ('xx','xixihaha')
-use boolshop
-use boolshop
-set names utf8
-set names utf8
-use boolshop
-set names utf8
-insert into cate (catename,intro) values ('asdf','aiaiaiaiai')
-use boolshop
-set names utf8
-use boolshop
-set names utf8
-insert into cate (catename,intro) values ('pink','tantatan')
-use boolshop
-set names utf8
-insert into cate (catename,intro) values ('pink','tantatan')
+select cat_id, cat_name, parent_id from category

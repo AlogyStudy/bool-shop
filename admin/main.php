@@ -4,6 +4,6 @@
 	
 	require('../include/init.php');
 	
-	include(ROOT . 'view/admin/tempaltes/main.html');
+	include(ROOT . 'view/admin/templates/main.html');
 
 ?>
