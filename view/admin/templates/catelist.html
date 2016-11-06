@@ -48,7 +48,7 @@
 					<td width="10%" align="right"><span>50</span></td>
 					<td width="24%" align="center">
 						<a href="#">转移商品</a> |
-						<a href="catedit.php?cat_id=">编辑</a> |
+						<a href="cateedit.php?cat_id=<?php echo $v['cat_id']; ?>">编辑</a> |
 						<a href="catedel.php?cat_id=<?php echo $v['cat_id']; ?>" onclick="if( !confirm('确实要删除吗?') ) { return false; }; " title="移除">移除</a>
 					</td>
 				</tr>

@@ -102,25 +102,22 @@
 		 */		
 		public function autoExecute( $table, $arr, $mode = 'insert', $where = ' where 1 limit 1' ) {
 			
+			
 			if ( !is_array($arr) ) {
 				return false;
 			}
 			
 			if ( $mode == 'update' ) {
-				
-				$sql = 'update ' . $table . ' set ';
-				
+				$sql = "update " . $table . " set ";
 				foreach( $arr as $k => $v ) {
-					
 					$sql .= $k . "='" . $v . "',";
-					
-					$sql = rtrim($sql, ',');
-					$sql .= $where;
-					
-					return $this->query($sql); 
-					
 				}
 				
+				$sql = rtrim($sql, ',');
+				$sql .= $where;
+				
+				return $this->query($sql);
+
 			}
 			
 			$sql = 'insert into ' . $table . ' (' . implode(',', array_keys($arr)) . ')';

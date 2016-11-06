@@ -82,3 +82,51 @@ view 一般没含逻辑，只负责输出
 	做一个常量，防止跳墙. 
 	define('ACC', true);
 
+
+# ECSHOP `goods` 表字段含义
+
+goods_id 商品ID
+cat_id 分类ID  标记商品属于那个栏目
+goods_sn 商品序列号
+goods_name 商品名称
+click_count 点击量
+brand_id 所属的品牌
+provider_name 供货商
+goods_number 商品库存量
+goods_weight 商品重量(kg)
+market_price 市场价
+shop_price 本店价
+promote_price 促销价，优惠价
+promote_start_date 优惠开始日期
+promote_end_date 优惠结束日期
+warn_number 商品少到多少的时候
+keywords 关键字
+goods_brief 简短描述
+goods_desc 详细描述
+goods_thumb 
+goods_img
+original_img 
+is_real 是否是实体商品
+extension_code 
+is_on_sale 是否在销售状态
+is_alone_sale 是否单卖
+is_shipping 是否包邮
+integral
+add_time 发布时间
+sort_order 排序
+is_best   
+is_new
+is_hot
+
+last_update 上次修改时间
+goods_type 商品类型
+seller_note 买家备注
+give_integral 积分
+
+
+# 回收站
+
+`update`
+
+
+

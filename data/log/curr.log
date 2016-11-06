@@ -189,3 +189,1083 @@ delete from category where cat_id=4
 use boolshop
 set names utf8
 select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select * from category where cat_id=0
+use boolshop
+set names utf8
+select * from category where cat_id=0
+use boolshop
+set names utf8
+select * from category where cat_id=0
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=0
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=3
+use boolshop
+set names utf8
+select * from category where cat_id=2
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=2
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=3
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=4
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=5
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=6
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=2
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=0
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=2
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=3
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=2
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=2
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=3
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=0
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into category (cat_name,parent_id,intro) values ('男士正装11','2','男士，男士正装，正装')
+use boolshop
+set names utf8
+insert into category (cat_name,parent_id,intro) values ('男士正装11','2','男士，男士正装，正装')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into category (cat_name,intro,parent_id) values ('儿童休闲','小孩休闲','1')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=7
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=7
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=7
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=7
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=7
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=7
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=7
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=7
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into category (cat_name,parent_id,intro) values ('儿童休闲','1','小孩休闲，儿童。')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=3
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=3
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into category (cat_name,parent_id,intro) values ('男士商务','1','商务，男士。')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=9
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+update category set cat_name='休闲'where cat_id=9
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=9
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+update category set cat_name='休闲' where cat_id=9
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=9
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+update category set cat_name='儿童休闲' where cat_id=9
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=9
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+update category set cat_name='儿童休闲' where cat_id=9
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=9
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=9
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=9
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+update category set cat_name='儿童',parent_id='1',intro='商务，男士。商务，' where cat_id=9
+use boolshop
+set names utf8
+update category set cat_name='休闲服装',parent_id='0',intro='休闲服装，休闲服装' where cat_id=9
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category where parent_id=1
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=3
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=3
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=3
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=3
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+goods
+use boolshop
+set names utf8
+goods
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('aaa','aaa','0','123','123','123123123','12','11','1','0','0','1','123','','1478412418')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('xii','xii','0','0','0','xixixihahh','10','1','1','0','0','1','1312','212qw','1478412896')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('gongbao','gongbao','0','10','10','1231230','20','1','1','0','0','1','1231','asdfsdf','1478413311')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('asdf','asdf','0','0','0','asdf','10','1','1','0','0','1','asdf','asdf','1478413543')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('被窝','1','0','10','10','200200','10','1','1','0','0','1','world','weasdfa','1478413700')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('weibo','11','0','10','10','asdfaf','10','10','1','0','0','1','asd','1023423afds','1478413917')
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('weibo','11','0','10','10','asdfaf','10','10','1','0','0','1','asd','1023423afds','1478413917')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('测试1','1100','0','10','10','测试测试','10','10','1','0','0','1','测试，测试','测hi是。','1478413990')
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('测试1','1100','0','10','10','测试测试','10','10','1','0','0','1','测试，测试','测hi是。','1478413990')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('测试','100','0','123','12','测试，测试。','10','123','1','0','0','1','测试，测试。','测试，测试。测试，测试。','1478414089')
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('测试','100','0','123','12','测试，测试。','10','123','1','0','0','1','测试，测试。','测试，测试。测试，测试。','1478414089')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('asdf','z','0','10','10','asdf10','10','123123','1','0','1','1','1230123','12301203','1478414183')
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('asdf','z','0','10','10','asdf10','10','123123','1','0','1','1','1230123','12301203','1478414183')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('asdf','','0','0','0','','0','1','0','0','0','1','','','1478414233')
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('asdf','','0','0','0','','0','1','0','0','0','1','','','1478414233')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('APPLE','qpp01','0','100','100','apple','10','12','1','1','0','1','apple','apple,apple,apple','1478417293')
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('APPLE','qpp01','0','100','100','apple','10','12','1','1','0','1','apple','apple,apple,apple','1478417293')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('goods_safs','asdf','0','123','11','asfsdlfajd;lfj;ljlkj','12','12','0','1','0','1','1021312','1asf;','1478417438')
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('goods_safs','asdf','0','123','11','asfsdlfajd;lfj;ljlkj','12','12','0','1','0','1','1021312','1asf;','1478417438')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('goods_safs','asdf','0','123','11','asfsdlfajd;lfj;ljlkj','12','12','0','1','0','1','1021312','1asf;','1478417711')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('goods_safs','asdf','0','123','11','asfsdlfajd;lfj;ljlkj','12','12','0','1','0','1','1021312','1asf;','1478417824')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('goods_safs','asdf','0','123','11','asfsdlfajd;lfj;ljlkj','12','12','0','1','0','1','1021312','1asf;','1478417948')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('goods_safs','asdf','0','123','11','asfsdlfajd;lfj;ljlkj','12','12','0','1','0','1','1021312','1asf;','1478417972')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('xixi','001','0','10','10','xxiihahah','10','101','0','0','0','1','','','1478418872')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('火锅','bool01','0','12','10','四川火锅','10','10','0','1','1','1','火锅','火锅，盖火锅','1478420046')
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('火锅','bool01','0','12','10','四川火锅','10','10','0','1','1','1','火锅','火锅，盖火锅','1478420046')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,add_time) values ('木耳','m_001','0','10','12','好吃 木耳','0.005','100','1','0','1','1','木耳，好吃','木耳，木耳。','1478420344')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+1
+use boolshop
+set names utf8
+select * from goods where goods_id=1
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+use boolshop
+set names utf8
+set names utf8
+select * from goods
+select * from goods
+use boolshop
+set names utf8
+set names utf8
+select * from goods
+use boolshop
+select * from goods
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
