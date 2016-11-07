@@ -10,7 +10,8 @@
 	 */	
 	
 	$goods = new GoodsModel();
-	$goodslist = $goods->select();
+	$goodslist = $goods->getGoods();
+	
 	
 	
 	include(ROOT . 'view/admin/templates/goodslist.html');

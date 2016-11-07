@@ -60,10 +60,97 @@ goods_id, goods_name, goods_desc;
 
 2. catModel 里 和 goodsModel 里， 都有一个add方法，重复。
 抽取到基类。 
+CURD 操作放入基类中.
 
 
 3. 字段的合法性，也能够自动判断.
 自动验证
 
 
+# 自动过滤
+
+格式化POST数组，按表中的字段格式化数组.
+
+```
+/**
+ * 格式化数组
+ * 清除掉不用的单元，留下与表中的字段对应的单元.
+ * @param {Array}
+ * 循环数组，分别判断其key是否是表的字段.
+ * 
+ * 表的字段可以desc表名来分析
+ * 也可以手动写好.
+ * 以TP为例，两者都行.
+ */
+public function _facade( $arr = array() ) {
+	
+	$data = array();
+	
+	foreach( $arr as $key => $val ) {
+		// $key 是否是表中的字段.
+		if ( in_array($key, $this->fields) ) {
+			$data[$key] = $val; 	
+		}
+		
+	}
+	
+	return $data;
+	
+} 
+
+```
+
+
+# 自动完成
+
+```
+/**
+ * 自动完成/自动填充
+ * 把表中的需要值， 而 $_POST 中却没有 的值，赋值
+ * 比如$_POST 中没有 `add_time`, 即商品时间.
+ * @param {Array} $data POST提交的数组
+ * @return {Array} 添加完成之后的数组
+ */
+public function _autoFill( $data ) {
+	
+	foreach ( $this->_auto as $k => $v ) {
+		
+		if ( !array_key_exists($v[0], $data) ) {
+			switch ( $v[1] ) {
+				
+				case 'value' : 
+					$data[$v[0]] = $v[2];
+				break;
+				
+				case 'function' :
+					$data[$v[0]] = call_user_func($v[2]);
+				break;		
+			}
+		}
+		
+	}
+	
+	return $data;
+	
+}	
+```
+
+# 日志3
+
+完善Model父类，实现非表中对应的字段自动删除，没有字段，自动赋值。(数据过滤，自动完成)
+
+
+
+# 自动验证
+
+TP中的自动验证(部分)
+
+1. 必检字段
+0. 有字段则检查，无此字段则不检查，如：性别
+	 没有，不检，有必是男女之一
+3. 如有且内容不为空，则检查，如：签名档，非空，则检查长度
+
+
+
+	 
 

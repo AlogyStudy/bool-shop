@@ -1269,3 +1269,259 @@ select * from goods
 use boolshop
 set names utf8
 select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+update goods set is_delete='1'where goods_id=1
+use boolshop
+set names utf8
+update goods set is_delete='1'where goods_id=1
+use boolshop
+set names utf8
+update goods set is_delete='1'where goods_id=1
+use boolshop
+set names utf8
+update goods set is_delete='1'where goods_id=1
+use boolshop
+set names utf8
+update goods set is_delete='1'where goods_id=1
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+update goods set is_delete='1'where goods_id=1
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+update goods set is_delete='1'where goods_id=3
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+update goods set is_delete='1'where goods_id=1
+use boolshop
+set names utf8
+update goods set is_delete='1'where goods_id=1
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=1
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=1
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=1
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=1
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=3
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=2
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=1
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=3
+use boolshop
+set names utf8
+select * from goods
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=0
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id) values ('面食','19','0','10','10','杂酱面，杂酱面','7','10','1','1','杂酱面，杂酱面','杂酱面，杂酱面','0')
+use boolshop
+set names utf8
+insert into goods (goods_weight) values ('0')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time) values ('面食','19','0','10','10','杂酱面，杂酱面','7','10','1','1','杂酱面，杂酱面','杂酱面，杂酱面','0','0','0','1478446004')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time) values ('面食','19000','0','10','10','杂酱面，杂酱面','7','10','1','1','杂酱面，杂酱面','杂酱面，杂酱面','0','0','0','1478446244')
