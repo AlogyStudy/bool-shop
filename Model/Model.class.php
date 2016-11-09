@@ -13,6 +13,8 @@
 		
 		protected $_auto = array(); // 需要自动填充的字段
 		
+		protected $_valid = array(); // 自动验证规则
+		
 		public function __construct() {
 			$this->db = Mysql::getIns();
 		}
@@ -154,6 +156,79 @@
 			
 			return $this->db->getRow( $sql );
 			
+		}
+		
+		/**
+		 * 自动验证 
+		 * @param {Array} $data 验证的数组
+		 * 格式 $this->_valid = array(
+		 *  array('验证的字段名', '0/1/2(验证场景)', '报错提示', 'require/in(某几种情况)/between(某个范围)/length(某个范围)', '参数')
+		 * ); 
+		 * 	
+		 * array('goods_name', 1, '必须有商品名', 'requird'), 
+		 */
+		 
+		 
+		protected $_valid = array( // 1 必须验证 , 0 有字段即检查  
+			array('goods_name', 1, '必须有商品名', 'require'), 
+			array('cat_id', 1, '栏目id必须是整型值', 'number'),
+			array('is_new', 0, 'is_new只能是0或1','in', '0,1'),
+			array('goods_breif', 2, '商品简介应在10到100字符','length', '10,100')   			
+		);
+		 		 
+		public function _validate( $data ) {
+			
+			if ( empty($this->_valid) ) {
+				return true;
+			}
+			
+			foreach($this->_valid as $k => $v) {
+				switch( $v[1] ) {
+					case 1 : 
+						if ( !isset($data[$v[0]]) || empty($data[$v[0]]) ) { // 存在且不能为空
+							return false;
+						}
+					break;
+					case 0 : 
+							if ( isset($data[$v[0]]) ) {
+								if ( $this->check($data[$v[0]], $v[1], $v[4]) ) {
+									return false;
+								}				
+							}	
+					break;
+					case 2 :
+						if ( isset($data[$v[0]]) && !empty($data[$v[0]]) ) {
+							
+						}		 
+				}
+			}
+			
+		}
+		
+		/**
+		 * check 自动验证信息
+		 * @param {String} 验证的value // 字段名
+		 * @param {String} 验证的规则 , // 0, 1, 2  
+		 * // requird , in , between, length 
+		 * @param {String} 验证参数  (0,1)范围值
+		 * @return {Boolean} 验证是否成功   
+		 */
+		protected function check( $value, $rule = '', $parm = '' ) {
+			switch ( $rule ) {
+				case 'require' :
+					return !empty($value);
+				case 'in' :
+					$tmp = explode(',', $parm);
+					return in_array($value, $tmp);
+				case 'between' :
+					list($mix, $max) = explode(',', $parm);
+					return $value >= $mix && $value <= $max; 
+				case 'length' :
+					list($min, $max) = explode(',', $parm);
+					return strlen($value) >= $min && strlen($value) <= $max;
+				default :
+					return false;	 	
+			}
 		}
 		
 	}
