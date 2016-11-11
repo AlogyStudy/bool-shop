@@ -14,6 +14,7 @@
 		protected $_auto = array(); // 需要自动填充的字段
 		
 		protected $_valid = array(); // 自动验证规则
+		protected $error = array(); // 错误信息
 		
 		public function __construct() {
 			$this->db = Mysql::getIns();
@@ -182,24 +183,34 @@
 				return true;
 			}
 			
+			$this->error = array();
+						
 			foreach($this->_valid as $k => $v) {
 				switch( $v[1] ) {
 					case 1 : 
 						if ( !isset($data[$v[0]]) || empty($data[$v[0]]) ) { // 存在且不能为空
+							$this->error[] = $v[2];
 							return false;
 						}
+						return true;
 					break;
 					case 0 : 
 							if ( isset($data[$v[0]]) ) {
 								if ( $this->check($data[$v[0]], $v[1], $v[4]) ) {
+									$this->error[] = $v[2];
 									return false;
 								}				
 							}	
+							return true;
 					break;
 					case 2 :
 						if ( isset($data[$v[0]]) && !empty($data[$v[0]]) ) {
-							
+							if ( !$this->check($data[$v[0]], $v[1], $v[4]) ) {
+								$this->error[] = $v[2];
+								return false;
+							}	
 						}		 
+						return true;
 				}
 			}
 			
