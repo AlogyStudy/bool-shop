@@ -45,11 +45,11 @@
 			array('add_time', 'function', 'time')
 		);
 		
-		protected $_valid = array( // 1 必须验证 , 0 有字段即检查  
+		protected $_valid = array( // 1 必须验证 , 0 有字段即检查    
 			array('goods_name', 1, '必须有商品名', 'require'), 
 			array('cat_id', 1, '栏目id必须是整型值', 'number'),
-			array('is_new', 0, 'is_new只能是0或1','in', '0,1'),
-			array('goods_breif', 2, '商品简介应在10到100字符','length', '10,100')   			
+//			array('is_new', 0, 'is_new只能是0或1','in', '0,1'),
+			array('goods_brief', 2, '商品简介应在10到100字符','length', '10,100')   			
 		);
 			
 		/**

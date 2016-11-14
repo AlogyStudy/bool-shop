@@ -152,5 +152,89 @@ TP中的自动验证(部分)
 
 
 
-	 
+# 文件上传
+
+1. 表单项
+2. $_FILES变量
+3. PHP处理
+4. 参数配置
+
+-----
+
+> 文件上传过程
+
+1. 提交后，文件**自动**发到服务器上，形成一个**临时**文件(临时文件存在：$_FILES数据库的tmp目录下)
+2. 在服务器上，只需要把临时文件移动到自己想要的位置就可以完成上传操作.
+3. 使用`move_uploaded_file()` 移动文件.
+
+文件名的文件信息.例如：文件名，文件大小。等，又在哪儿呢。
+
+PHP形成临时文件后，还会形成`$_FILES`超级全局数组
+数组中保存着文件的临时地址，临时名称，大小等信息。
+
+临时文件什么时候消失：临时文件在接收的.php 文件结束后，就立即消失了。
+
+
+注意点：
+
+* 文件上传 必须是 `POST`
+* from表单需要是声明：`enctype="multipart/form-data"`
+
+
+计算机中的通信，离不开协议。你如何说，我怎么应。
+
+
+> 文件上传参数
+
+`php.ini` 中相关配置
+
+`file_uploads` 是否允许HTTP文件上传
+`upload_max_filesize` 所上传的文件的最大大小(字节)
+`post_max_size` 设定POST数据所允许的最大大小(字节)
+`upload_tmp_dir` 文件上传时存放文件的临时目录 
+`max_execution_time` 脚本最大执行时间
+
+
+## 多文件上传
+
+`file` 控件不允许有默认值.
+
+循环`$_FILES`数组.
+
+多文件上传注意点：
+
+```
+array
+  'pic' => 
+    array
+      'name' => 
+        array
+          0 => string '21鍏嬬殑鐏甸瓊--鎳夸竴.jpg' (length=26)
+          1 => string '123.jpg' (length=7)
+          2 => string '52680a04c932570a4eb90452ae286f11_b.jpg' (length=38)
+      'type' => 
+        array
+          0 => string 'image/jpeg' (length=10)
+          1 => string 'image/jpeg' (length=10)
+          2 => string 'image/jpeg' (length=10)
+      'tmp_name' => 
+        array
+          0 => string 'E:\wamp\tmp\php2668.tmp' (length=23)
+          1 => string 'E:\wamp\tmp\php2679.tmp' (length=23)
+          2 => string 'E:\wamp\tmp\php267A.tmp' (length=23)
+      'error' => 
+        array
+          0 => int 0
+          1 => int 0
+          2 => int 0
+      'size' => 
+        array
+          0 => int 75510
+          1 => int 66912
+          2 => int 351811
+```
+
+	
+
+
 

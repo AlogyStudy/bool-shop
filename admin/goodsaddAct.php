@@ -34,6 +34,20 @@
 	$data = $goods->_facade($_POST); // 自动过滤
 	$data = $goods->_autoFill($data); // 自动填充
 			
+	if ( !$goods->_validate($data) ) {
+		echo '数据不合法<br />';
+		echo implode(',', $goods->getError()),'<br />';	
+	}
+	
+	// 上传图片
+	$upTool = new UpTool();
+	$ori_img = $upTool->up('ori_img');
+	// 写入数据库
+	if ( $ori_img ) {
+		$data['ori_img'] = $ori_img; 
+	}
+	
+	
 	if ( $goods->add($data) ) {
 		echo '商品发布成功';
 	}	else {

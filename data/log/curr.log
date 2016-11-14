@@ -1525,3 +1525,298 @@ insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc
 use boolshop
 set names utf8
 insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time) values ('面食','19000','0','10','10','杂酱面，杂酱面','7','10','1','1','杂酱面，杂酱面','杂酱面，杂酱面','0','0','0','1478446244')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('','','0','0','0','','0','1','1','','','0','0','0','0','1478939649')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('','','0','0','0','','0','1','1','','','0','0','0','0','1478939975')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('咸鱼','','0','0','0','','0','1','1','','','0','0','0','0','1478940368')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('咸鱼','','三三三','0','0','','0','1','1','','','0','0','0','0','1478946692')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('咸鱼','','三年三三','0','0','','0','1','1','','','0','0','0','0','1478947112')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('','','0','0','0','','0','1','1','','','0','0','0','0','1478948544')
+use boolshop
+set names utf8
+insert into goods (goods_weight,is_hot,is_new,is_best,add_time) values ('0','0','0','0','1478948648')
+use boolshop
+set names utf8
+insert into goods (goods_weight,is_hot,is_new,is_best,add_time) values ('0','0','0','0','1478948651')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('','','0','0','0','','0','1','1','','','0','0','0','0','1478948674')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time) values ('','','0','0','0','','0','1','1','1','','','0','0','0','1478948755')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time) values ('name','','1','0','0','','0','1','1','1','','','0','0','0','1478948773')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('name','','1','0','0','','0','1','1','','','0','0','0','0','1478952143')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('咸鱼','','1','0','0','','0','1','1','','','0','0','0','0','1478952182')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,add_time) values ('咸鱼','','1','0','0','','0','1','1','1','','','0','0','0','1478952192')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('咸鱼','','1','0','0','','0','1','1','','','0','0','0','0','1478952438')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time) values ('咸鱼','','1','0','0','','0','1','1','1','','','0','0','0','1478952634')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time) values ('咸鱼','','1','0','0','','0','1','1','1','','','0','0','0','1478952948')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time) values ('咸鱼','','1','0','0','','0','1','1','1','','','0','0','0','1478952985')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time) values ('咸鱼','','1','0','0','','0','1','1','1','','','0','0','0','1478953003')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time) values ('','','0','0','0','','0','1','1','1','','','0','0','0','1478953040')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time) values ('catget','','1','0','0','','0','1','1','1','','','0','0','0','1478953058')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,is_best,add_time) values ('catget','','1','0','0','','0','1','1','','','0','0','0','0','1478953076')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,goods_id,add_time) values ('catget','','1','0','0','','0','1','1','1','1','1','','','0','1478953493')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,goods_id,add_time) values ('catget','','1','0','0','','0','1','1','1','1','1','','','0','1478953673')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,goods_id,add_time) values ('catget','','1','0','0','','0','1','1','1','1','1','','aa','0','1478953686')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,goods_id,add_time) values ('catget','','1','0','0','','0','1','1','1','1','1','','aaaaaaaaaaaa','0','1478953698')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,goods_id,add_time) values ('catget','','1','0','0','','0','1','1','1','1','1','','aaaaaaaaaaaa','0','1478954369')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_hot,is_on_sale,keywords,goods_brief,goods_id,add_time) values ('catget','','1','0','0','','0','1','1','1','1','1','','aaaaaaaaaaaa','0','1478954381')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time) values ('adfa','01','1','0','0','13123','10','1','1','1','aa','','0','0','0','1479048518')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time) values ('adfa','01','1','0','0','13123','10','1','1','1','aa','','0','0','0','1479048564')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,add_time,ori_img) values ('name','10','3','0','0','xixxii','10','1','1','1','','xixi','0','0','0','1479049120','E:/wamp/www/github/boolShop/data/images/201611/13')
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,add_time,ori_img) values ('name','10','3','0','0','xixxii','10','1','1','1','','xixi','0','0','0','1479049120','E:/wamp/www/github/boolShop/data/images/201611/13')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,add_time,ori_img) values ('aaaa','10','3','0','0','xixxii','10','1','1','1','1','','xixi','0','0','1479049138','E:/wamp/www/github/boolShop/data/images/201611/13')
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,add_time,ori_img) values ('aaaa','10','3','0','0','xixxii','10','1','1','1','1','','xixi','0','0','1479049138','E:/wamp/www/github/boolShop/data/images/201611/13')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,add_time,ori_img) values ('aaaa','10','3','0','0','xixxii','10','1','1','1','1','','xixi','0','0','1479049203','E:/wamp/www/github/boolShop/data/images/201611/13')
+use boolshop
+set names utf8
+insert into goods (goods_weight,is_hot,is_new,is_best,add_time) values ('0','0','0','0','1479049206')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,add_time,ori_img) values ('aaaa','10','3','0','0','xixxii','10','1','1','1','1','','xixi','0','0','1479049211','E:/wamp/www/github/boolShop/data/images/201611/13')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time,ori_img) values ('name','','1','1','10','陌生人','1','1','1','1','','陌生人','0','0','0','1479049586','data/images/201611/13/RxG_Z1.jpg')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time,ori_img) values ('name','','1','1','10','陌生人','1','1','1','1','','陌生人陌生人陌生人','0','0','0','1479049600','data/images/201611/13/y45oFQ.jpg')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_hot,is_on_sale,keywords,goods_brief,goods_id,is_best,add_time,ori_img) values ('name','10','1','1','10','陌生人陌生人陌生人陌生人陌生人','20','100','1','1','1','陌生人,陌生人','陌生人陌生人陌生人陌生人陌生人陌生人','0','0','1479049660','data/images/201611/13/I_yDN4.jpg')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,keywords,goods_brief,goods_id,is_new,add_time,ori_img) values ('pink','10','0','10','10','buyao','10','111','1','1','1','','10,1010,1010,1010,10','0','0','1479049710','data/images/201611/13/GiR8Yt.jpg')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time,ori_img) values ('pink','','1','11','123','pinkpinkpinkpinkpinkpinkpinkpink','10','100','1','1','','pinkpinkpinkpinkpinkpinkpinkpink','0','0','0','1479049797','data/images/201611/13/pG903o.jpg')
+use boolshop
+set names utf8
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_best,add_time,ori_img) values ('pink','goodsapink','1','11','123','pinkpinkpinkpinkpinkpinkpinkpink','10','100','1','1','','pinkpinkpinkpinkpinkpinkpinkpink','0','0','0','1479049824','data/images/201611/13/qNFYdw.jpg')
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=2
+use boolshop
+set names utf8
+update goods set is_delete='1' where goods_id=2
+use boolshop
+set names utf8
+select * from goods where is_delete=0
+use boolshop
+set names utf8
+select * from goods where is_delete=1
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+update category set cat_name='男士正装',parent_id='0',intro='男士，男士正装，正装' where cat_id=1
+use boolshop
+set names utf8
+select * from goods where is_delete=0

@@ -147,7 +147,7 @@
 		
 		/**
 		 * 根据主键 取出一行数据
-		 * @param {Int} 主键
+		 * @param {Int} $id 主键
 		 * @return {Array} 主键所在的数据   
 		 */
 		
@@ -166,17 +166,10 @@
 		 *  array('验证的字段名', '0/1/2(验证场景)', '报错提示', 'require/in(某几种情况)/between(某个范围)/length(某个范围)', '参数')
 		 * ); 
 		 * 	
-		 * array('goods_name', 1, '必须有商品名', 'requird'), 
+		 * array('goods_name', 1, '必须有商品名', 'requird'),
+		 * array('is_new', 0, 'is_new只能是0或1','in', '0,1'), 
 		 */
 		 
-		 
-		protected $_valid = array( // 1 必须验证 , 0 有字段即检查  
-			array('goods_name', 1, '必须有商品名', 'require'), 
-			array('cat_id', 1, '栏目id必须是整型值', 'number'),
-			array('is_new', 0, 'is_new只能是0或1','in', '0,1'),
-			array('goods_breif', 2, '商品简介应在10到100字符','length', '10,100')   			
-		);
-		 		 
 		public function _validate( $data ) {
 			
 			if ( empty($this->_valid) ) {
@@ -188,46 +181,54 @@
 			foreach($this->_valid as $k => $v) {
 				switch( $v[1] ) {
 					case 1 : 
-						if ( !isset($data[$v[0]]) || empty($data[$v[0]]) ) { // 存在且不能为空
+						if ( !isset($data[$v[0]]) ) { // 存在且不能为空
 							$this->error[] = $v[2];
 							return false;
 						}
-						return true;
+						if ( !$this->check($data[$v[0]], $v[3]) ) {
+							$this->error[] = $v[2];
+							return false;
+						}
+						break;
 					break;
 					case 0 : 
 							if ( isset($data[$v[0]]) ) {
-								if ( $this->check($data[$v[0]], $v[1], $v[4]) ) {
+								if ( $this->check($data[$v[0]], $v[3], $v[4]) ) {
 									$this->error[] = $v[2];
 									return false;
 								}				
 							}	
-							return true;
+							break;
 					break;
 					case 2 :
 						if ( isset($data[$v[0]]) && !empty($data[$v[0]]) ) {
-							if ( !$this->check($data[$v[0]], $v[1], $v[4]) ) {
+							if ( !$this->check($data[$v[0]], $v[3], $v[4]) ) {
 								$this->error[] = $v[2];
 								return false;
 							}	
 						}		 
-						return true;
+						break;
 				}
 			}
+			
+			return true;
 			
 		}
 		
 		/**
 		 * check 自动验证信息
-		 * @param {String} 验证的value // 字段名
-		 * @param {String} 验证的规则 , // 0, 1, 2  
+		 * @param {String} $value 验证的value // 字段名
+		 * @param {String} $rule 验证的规则 , // 0, 1, 2  
 		 * // requird , in , between, length 
-		 * @param {String} 验证参数  (0,1)范围值
+		 * @param {String} $parm 验证参数  (0,1)范围值
 		 * @return {Boolean} 验证是否成功   
 		 */
 		protected function check( $value, $rule = '', $parm = '' ) {
 			switch ( $rule ) {
 				case 'require' :
 					return !empty($value);
+				case 'number' :
+					return is_numeric($value);
 				case 'in' :
 					$tmp = explode(',', $parm);
 					return in_array($value, $tmp);
@@ -240,6 +241,14 @@
 				default :
 					return false;	 	
 			}
+		}
+		
+		/**
+		 * 返回自身的error
+		 * @return {Array} 
+		 */
+		public function getError() {
+			return $this->error;
 		}
 		
 	}
