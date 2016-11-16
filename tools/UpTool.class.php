@@ -99,6 +99,28 @@
 		} 
 		
 		/**
+		 * 设置允许的后缀 
+		 * @param {String} $exts 允许的后缀
+		 * @example 'jpg,jpeg,gif,bmp,png'
+		 */
+		public function setExt( $exts ) {
+			
+			$this->allow_ext = $exts;
+			
+		}
+		
+		/**
+		 * 设置配置文件属性大小
+		 * @param {Int} $num 设置配置文件属性的最大值  (M为单位)
+		 */
+		public function setSize( $num ) {
+			
+			$this->max_size = $num;
+			
+		}
+		
+		
+		/**
 		 * 获取文件后缀
 		 * @param {String} 文件名
 		 * @return {String} 返回该文件的后缀名

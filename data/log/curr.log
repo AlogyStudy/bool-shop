@@ -1820,3 +1820,6 @@ update category set cat_name='男士正装',parent_id='0',intro='男士，男士
 use boolshop
 set names utf8
 select * from goods where is_delete=0
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category

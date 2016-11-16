@@ -10,6 +10,9 @@
 	
 	$upTool = new UpTool();
 	
+	$upTool->setSize(0.5);
+	$upTool->setExt('zip');
+	
 	if ( $res = $upTool->up('pic') ) {
 		echo $upTool->getErr();
 		echo $res;
