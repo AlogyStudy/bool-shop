@@ -4,21 +4,34 @@
 
 	define('ACC', true);
 	
-	require('include/init.php');
+//	require('include/init.php');
+//	
+//	require(ROOT . 'tools/UpTool.class.php');
+//	
+//	$upTool = new UpTool();
+//	
+//	$upTool->setSize(0.5);
+//	$upTool->setExt('zip');
+//	
+//	if ( $res = $upTool->up('pic') ) {
+//		echo $upTool->getErr();
+//		echo $res;
+//	} else {
+//		echo $upTool->getErr();
+//	}
+
+
+	$ori_img = 'E:\wamp\www\github\boolShop\goods.sql';
+	echo basename($ori_img, '.sql') . PHP_EOL , '<br />';
+	echo dirname($ori_img) , '<br />';
 	
-	require(ROOT . 'tools/UpTool.class.php');
+	echo dirname($ori_img) . '\goods_' . basename($ori_img) , '<br />';
 	
-	$upTool = new UpTool();
+	$ori_img = 'E:\wamp\www\github\boolShop';
+	echo basename($ori_img) . PHP_EOL, '<br />';
+//	echo basename('.');
 	
-	$upTool->setSize(0.5);
-	$upTool->setExt('zip');
 	
-	if ( $res = $upTool->up('pic') ) {
-		echo $upTool->getErr();
-		echo $res;
-	} else {
-		echo $upTool->getErr();
-	}
 	
 
 ?>

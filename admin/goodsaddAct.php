@@ -42,12 +42,35 @@
 	// 上传图片
 	$upTool = new UpTool();
 	$ori_img = $upTool->up('ori_img');
+	
 	// 写入数据库
 	if ( $ori_img ) {
 		$data['ori_img'] = $ori_img; 
 	}
 	
+	// 生成 中等的缩略图 300 * 400
+	// 需要根据定义的规则，规定 缩略地址
+	// exp: aa.jpeg -> goods_aa.jpeg;
+	if ( $ori_img ) { // 原始图存在的情况下，生成缩略图和中等图片
 	
+		$ori_img = ROOT . $ori_img; // 加上绝对路径
+		$goods_img = dirname($ori_img) . '/goods_' . basename($ori_img);
+		
+		if ( ImageTool::thumb($ori_img, $goods_img, 300, 400) ) {
+			$data['goods_img'] = str_replace(ROOT, '', $goods_img);
+		} 
+				
+		// 生成浏览时使用的缩略图  160 * 220
+		// exp: aa.jpeg -> thumb_aa.jpeg;
+		$thumb_img = dirname($ori_img) . '/thumb_' . basename($ori_img);
+		if ( ImageTool::thumb($ori_img, $thumb_img, 160, 220) ) {
+			$data['thumb_img'] = str_replace(ROOT, '', $thumb_img);		
+		}
+	
+	}
+	
+
+	// 商品是否发布成功
 	if ( $goods->add($data) ) {
 		echo '商品发布成功';
 	}	else {

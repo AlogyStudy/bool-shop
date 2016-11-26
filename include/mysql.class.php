@@ -102,7 +102,6 @@
 		 */		
 		public function autoExecute( $table, $arr, $mode = 'insert', $where = ' where 1 limit 1' ) {
 			
-			
 			if ( !is_array($arr) ) {
 				return false;
 			}
@@ -124,7 +123,7 @@
 			$sql .= ' values (\'';
 			$sql .= implode("','", array_values($arr));
 			$sql .= '\')';
-			
+						
 			return $this->query($sql);
 			
 		}
