@@ -39,6 +39,13 @@
 		echo implode(',', $goods->getError()),'<br />';	
 	}
 	
+	// 添加自动商品货号
+	// 规则：BL + 时间戳 + 随机数
+	if ( empty($data['goods_sn']) ) { 
+		$data['goods_sn'] = $goods->createSn(); 
+	}
+	
+	
 	// 上传图片
 	$upTool = new UpTool();
 	$ori_img = $upTool->up('ori_img');

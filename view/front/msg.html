@@ -13,6 +13,9 @@
 <link rel="shortcut icon" href="http://www.zhongyis.com/favicon.ico">
 <link rel="icon" href="http://www.zhongyis.com/animated_favicon.gif" type="image/gif">
 <link href="./view/front/css/style.css" rel="stylesheet" type="text/css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.0/vue.js" type="text/javascript" charset="utf-8"></script>
+
 </head>
 
 <body>
@@ -94,7 +97,7 @@
 			var subdivs = obj.getElementsByTagName("DIV");
 			var ifs = obj.getElementsByTagName("IFRAME");
 			
-			if(subdivs.length&gt;0)
+			if(subdivs.length<0)
 			{
 
 				if(tag==1)
@@ -139,7 +142,6 @@
   <div class="search_box f_l">
          <script type="text/javascript">
 		
-		&lt;!--
 		function checkSearchForm()
 		{
 			if(document.getElementById('keyword').value)
@@ -152,7 +154,6 @@
 				return false;
 			}
 		}
-		--&gt;
 		
 		</script>
         <form onsubmit="return checkSearchForm()" action="http://www.zhongyis.com/search.php" method="get" name="searchForm" id="searchForm">
@@ -199,20 +200,31 @@
 
 
 <div class="block">
-  <div class="box">
+  <div class="box" id="box">
    <div class="box_1">
     <h3><span>系统信息</span></h3>
     <div align="center" class="boxCenterList RelaArticle">
       <div style="margin:20px auto;">
-      <p style="font-size: 14px; font-weight:bold; color: red;">
-      <?php echo $msg; ?>
-      </p>
+      <p style="font-size: 14px; font-weight:bold; color: red;">{{msg}}</p>
         <div class="blank"></div>
      </div>
     </div>
    </div>
   </div>
 </div>
+<script type="text/javascript">
+
+	var msgP = new Vue({
+		el: '.boxCenterList',
+		data: function() {
+			return {
+				msg: '<?php echo $msg; ?>'
+			}
+		}
+		
+	});
+	
+</script>	
 <div class="blank"></div>
 <div style="text-align:center"></div>
 

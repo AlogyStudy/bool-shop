@@ -181,9 +181,54 @@
 			
 		}
 
-		 
+		/**
+		 * 验证码
+		 * @param {Int} $width 验证码宽度
+		 * @param {Int} $height 验证码高度
+		 */
+		public static function captcha( $width=50, $height=25 ) {
+			
+			// 创建画布
+			$im = imagecreatetruecolor($width, $height);
+			
+			// 背景
+			$gray = imagecolorallocate($im, 200, 200, 200);
+			
+			// 填充背景
+			imagefill($im, 0, 0, $gray);
+			
+			// 随机数字体颜色
+			$red_rand = mt_rand(0, 125);
+			$green_rand = mt_rand(0, 150);
+			$blue_rand = mt_rand(0, 100);
+			$color = imagecolorallocate($im, $red_rand, $green_rand, $blue_rand);
+			
+			// 随机线条颜色
+			$red_line = mt_rand(100, 125);
+			$green_line = mt_rand(100, 150);
+			$blue_line = mt_rand(100, 125);
+			$color_line1 = imagecolorallocate($im, $red_line, $green_line, $blue_line);
+			$color_line2 = imagecolorallocate($im, $red_line, $green_line, $blue_line);
+			$color_line3 = imagecolorallocate($im, $red_line, $green_line, $blue_line);
+			
+			// 画布上画线
+			imageline($im, mt_rand(0, $width), mt_rand(0, $height), mt_rand(0, $width), mt_rand(0, $height), $color_line1);
+			imageline($im, mt_rand(0, $width), mt_rand(0, $height), mt_rand(0, $width), mt_rand(0, $height), $color_line2);
+			imageline($im, mt_rand(0, $width), mt_rand(0, $height), mt_rand(0, $width), mt_rand(0, $height), $color_line3);
+			
+			// 画布上写字
+			$text = substr(str_shuffle('abcdefghijkmnpqrstuvwxyzABCDEFGHIJKMNPQRSTUVWXYZ23456789'), 0, 4);
+			imagestring($im, 5, 7, 5, $text, $color);
+			
+			// 显示
+			header('Content-type: image/jpeg');
+			imagejpeg($im);
+			
+			// 销毁
+			imagedestroy($im);
+			
+		}
 		
 	}
 
 ?>
-

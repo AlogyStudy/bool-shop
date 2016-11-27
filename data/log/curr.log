@@ -1884,3 +1884,261 @@ insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc
 use boolshop
 set names utf8
 select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016112693312'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,add_time,ori_img,goods_img,thumb_img) values ('sunyanzi','BL2016112693312','0','100','120','sunyanzi','60','1','1','1','sunyanzi','sunyanzi','0','0','0','1480173209','data/images/201611/26/lNTgzn.jpg','data/images/201611/26/goods_lNTgzn.jpg','data/images/201611/26/thumb_lNTgzn.jpg')
+use boolshop
+set names utf8
+select count(*) from goods where goods_sn='BL2016112683292'
+insert into goods (goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_on_sale,keywords,goods_brief,goods_id,is_hot,is_new,add_time,ori_img,goods_img,thumb_img) values ('sunyanzi','BL2016112683292','0','100','120','sunyanzi','60','1','1','1','sunyanzi','sunyanzisunyanzisunyanzi','0','0','0','1480173219','data/images/201611/26/oOt7N6.jpg','data/images/201611/26/goods_oOt7N6.jpg','data/images/201611/26/thumb_oOt7N6.jpg')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+insert into user () values ('')
+use boolshop
+set names utf8
+insert into user (passwd) values ('123123')
+use boolshop
+set names utf8
+insert into user (passwd) values ('123123')
+use boolshop
+set names utf8
+insert into user (passwd) values ('123123')
+use boolshop
+set names utf8
+insert into user (passwd) values ('123123')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into user (passwd) values ('123123')
+use boolshop
+set names utf8
+insert into user (username,email,passwd) values ('user1','user1@gmial.com','123123')
+use boolshop
+set names utf8
+insert into user (username,email,passwd) values ('user1','user1@gmial.com','123123')
+use boolshop
+set names utf8
+insert into user () values ('')
+use boolshop
+set names utf8
+insert into user (username,email,passwd) values ('user1','user1@gmial.com','123123')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480238972')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239080')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239103')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239130')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239142')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239148')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239171')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239213')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239226')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239238')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239251')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239291')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239311')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239336')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239365')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239405')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239431')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239525')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239548')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239727')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239761')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239795')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480239814')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480248559')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480248565')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','123123','1480248571')
+use boolshop
+set names utf8
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','4297f44b13955235245b2497399d7a93','1480249581')
+use boolshop
+set names utf8
+select count(*) from user where usesname='username'
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','4297f44b13955235245b2497399d7a93','1480250284')
+use boolshop
+set names utf8
+select count(*) from user where usesname='username'
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','4297f44b13955235245b2497399d7a93','1480250300')
+use boolshop
+set names utf8
+select count(*) from user where usesname='username'
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','4297f44b13955235245b2497399d7a93','1480250379')
+use boolshop
+set names utf8
+select count(*) from user where usesname='username'
+use boolshop
+set names utf8
+select count(*) from user where username='username'
+use boolshop
+set names utf8
+select count(*) from user where username='username'
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','14c4b06b824ec593239362517f538b29','1480250567')
+use boolshop
+set names utf8
+select count(*) from user where username='username'
+insert into user (username,email,passwd,regtime) values ('username','username@gmial.com','14c4b06b824ec593239362517f538b29','1480250702')
+use boolshop
+set names utf8
+select count(*) from user where username='username'
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select count(*) from user where username='username'
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select count(*) from user where username='user2'
+insert into user (username,email,passwd,regtime) values ('user2','user2@gmial.com','7e58d63b60197ceb55a1c487989a3720','1480252122')

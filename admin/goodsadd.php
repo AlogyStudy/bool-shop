@@ -5,7 +5,6 @@
 	
 	require('../include/init.php');
 
-
 	$cat = new CateModel();
 	$catlist = $cat->select();
 	

@@ -165,7 +165,8 @@
 		 * 格式 $this->_valid = array(
 		 *  array('验证的字段名', '0/1/2(验证场景)', '报错提示', 'require/in(某几种情况)/between(某个范围)/length(某个范围)', '参数')
 		 * ); 
-		 * 	
+		 * 
+		 * @example:  	
 		 * array('goods_name', 1, '必须有商品名', 'requird'),
 		 * array('is_new', 0, 'is_new只能是0或1','in', '0,1'), 
 		 */
@@ -179,26 +180,25 @@
 			$this->error = array();
 						
 			foreach($this->_valid as $k => $v) {
-				switch( $v[1] ) {
-					case 1 : 
+				// 0/1/2(验证场景)
+				switch( $v[1] ) { 
+					case 1 : // 1 必须检测
 						if ( !isset($data[$v[0]]) ) { // 存在且不能为空
 							$this->error[] = $v[2];
 							return false;
 						}
-						if ( !$this->check($data[$v[0]], $v[3]) ) {
+						if ( !$this->check($data[$v[0]], $v[3])) {
 							$this->error[] = $v[2];
 							return false;
 						}
-						break;
 					break;
-					case 0 : 
+					case 0 : // 0 如果有检测
 							if ( isset($data[$v[0]]) ) {
-								if ( $this->check($data[$v[0]], $v[3], $v[4]) ) {
+								if ( !$this->check($data[$v[0]], $v[3], $v[4]) ) {
 									$this->error[] = $v[2];
 									return false;
 								}				
 							}	
-							break;
 					break;
 					case 2 :
 						if ( isset($data[$v[0]]) && !empty($data[$v[0]]) ) {
@@ -207,7 +207,7 @@
 								return false;
 							}	
 						}		 
-						break;
+					break;
 				}
 			}
 			
@@ -238,6 +238,9 @@
 				case 'length' :
 					list($min, $max) = explode(',', $parm);
 					return strlen($value) >= $min && strlen($value) <= $max;
+				case 'emial':
+					// 判断$value 是否是emial, 可以使用正则表达式 ,此处使用系统函数来判断
+					return filter_var($value, FILTER_VALIDATE_EMAIL) !== false; 
 				default :
 					return false;	 	
 			}

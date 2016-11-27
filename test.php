@@ -21,17 +21,22 @@
 //	}
 
 
-	$ori_img = 'E:\wamp\www\github\boolShop\goods.sql';
-	echo basename($ori_img, '.sql') . PHP_EOL , '<br />';
-	echo dirname($ori_img) , '<br />';
-	
-	echo dirname($ori_img) . '\goods_' . basename($ori_img) , '<br />';
-	
-	$ori_img = 'E:\wamp\www\github\boolShop';
-	echo basename($ori_img) . PHP_EOL, '<br />';
+//	$ori_img = 'E:\wamp\www\github\boolShop\goods.sql';
+//	echo basename($ori_img, '.sql') . PHP_EOL , '<br />';
+//	echo dirname($ori_img) , '<br />';
+//	
+//	echo dirname($ori_img) . '\goods_' . basename($ori_img) , '<br />';
+//	
+//	$ori_img = 'E:\wamp\www\github\boolShop';
+//	echo basename($ori_img) . PHP_EOL, '<br />';
 //	echo basename('.');
 	
 	
+//	echo date('Ymd', time());
+
+	var_dump(filter_var('bob@example.com', FILTER_VALIDATE_EMAIL));
+	var_dump(filter_var('123123', FILTER_VALIDATE_EMAIL));
+	var_dump(filter_var('http://www.linxingzhang.com', FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED));
 	
 
 ?>

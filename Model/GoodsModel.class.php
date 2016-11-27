@@ -48,7 +48,7 @@
 		protected $_valid = array( // 1 必须验证 , 0 有字段即检查    
 			array('goods_name', 1, '必须有商品名', 'require'), 
 			array('cat_id', 1, '栏目id必须是整型值', 'number'),
-//			array('is_new', 0, 'is_new只能是0或1','in', '0,1'),
+			array('is_new', 0, 'is_new只能是0或1','in', '0,1'),
 			array('goods_brief', 2, '商品简介应在10到100字符','length', '10,100')   			
 		);
 			
@@ -109,6 +109,22 @@
 			return $this->update(array('is_delete' => 0), $id);			
 			
 		}
+		
+		/**
+		 * 创建商品的货号
+		 * 商品货号规则: BL + 时间戳 + 随机数
+		 */
+		public function createSn() {
+			
+			// 2 + 8 + 5;
+			$sn = 'BL' . date('Ymd') . rand(10000, 99999);
+			
+			$sql = "select count(*) from " . $this->table . " where goods_sn='" .$sn . "'";
+			
+			// 如果存在再次调用该函数
+			return $this->db->getOne($sql) ? $this->createSn() : $sn; 
+			
+		} 
 		 
 	}
 	 
