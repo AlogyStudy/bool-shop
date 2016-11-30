@@ -2142,3 +2142,6 @@ use boolshop
 set names utf8
 select count(*) from user where username='user2'
 insert into user (username,email,passwd,regtime) values ('user2','user2@gmial.com','7e58d63b60197ceb55a1c487989a3720','1480252122')
+use boolshop
+set names utf8
+select cat_id, cat_name, parent_id from category
