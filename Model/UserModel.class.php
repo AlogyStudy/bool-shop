@@ -47,13 +47,37 @@
 		/**
 		 * 检查用户是否存在
 		 * @param {String} $username 用户名
+		 * @param {String} $passwd 密码
+		 * @return {Mixin} Boolean Array 
 		 */
-		public function checkuser( $username ) {
+		public function checkuser( $username, $passwd='' ) {
 			
-			$sql = "select count(*) from " . $this->table . " where username='" . $username ."'";
+			// 根据用户名判断
+			if ( $passwd == '' ) { 
+				$sql = "select count(*) from " . $this->table . " where username='" . $username ."'";
+			} else {
+				// 根据用户名和密码判断
+				$sql = "select user_id, username, email, passwd from " . $this->table . " where username='". $username . "'";
+				
+				$row = $this->db->getRow($sql); // 用户名，密码，email 读取
+				
+				// 用户名是否存在
+				if ( empty($row) ) {
+					return false;
+				}
+				
+				// 比较用户密码
+				if ( $row['passwd'] != $this->encPasswd($passwd) ) {
+					return false;			
+				}
+				
+				// 返回之前 删除密码再返回   -- 保险
+				unset($row['passwd']);  
+				
+				return $row;
+			}
 			
-			return $this->db->getOne($sql); 
-			
+//			return $this->db->getOne($sql); 
 		} 
 		
 	} 

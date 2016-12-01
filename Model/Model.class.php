@@ -173,10 +173,21 @@
 		 
 		public function _validate( $data ) {
 			
+			// 判断是否存在数组			
 			if ( empty($this->_valid) ) {
 				return true;
 			}
 			
+			// 过滤 emial 
+			$keyArr = array_keys($data);
+			for ( $i=0; $i<count($keyArr); $i++ ) {
+				if ( $keyArr[$i] != 'email' ) {
+					unset($this->_valid[2]);
+					unset($this->_valid[3]);
+				}
+			}
+			
+			// 错误数组
 			$this->error = array();
 						
 			foreach($this->_valid as $k => $v) {
@@ -224,6 +235,7 @@
 		 * @return {Boolean} 验证是否成功   
 		 */
 		protected function check( $value, $rule = '', $parm = '' ) {
+			
 			switch ( $rule ) {
 				case 'require' :
 					return !empty($value);

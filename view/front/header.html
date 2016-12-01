@@ -7,21 +7,16 @@
 			<div class="member_login f_l">
 				<font id="ECS_MEMBERZONE">
 					<div id="append_parent"></div>
-					<?php 
- if(isset($_SESSION['username']) && !empty($_SESSION['username'])) { ?> 您好，
-
-					<font class="f_orange_bold">
-						<?php echo $_SESSION['username']; ?>
-					</font>, 欢迎您回来！
-					<a href="#">用户中心</a>|
-					<a href="logout.php">退出</a>
-
-					<?php } else { ?> 欢迎光临中意斯！&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="login.php">登录</a> |
-					<a href="#">注册</a>
-
-					<?php } ?>
-
+					<?php if ( isset($_SESSION['username']) && !empty($_SESSION['username']) ) {?>
+						您好，<font class="f_orange_bold"><?php echo $_SESSION['username']; ?></font>, 欢迎您回来！
+						<a href="#">用户中心</a>|
+						<a href="logout.php">退出</a>
+					
+					<?php } else {?>
+						欢迎光临中意斯！&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="login.php">登录</a> |
+						<a href="#">注册</a>
+					<?php };?>
 				</font>
 			</div>
 			<div class="page_top f_r">

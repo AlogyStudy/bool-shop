@@ -284,3 +284,17 @@ session可以存储数组/对象（除了资源型，其它7中类型都可以�
 注意：如果把对象存储到session里，那么另一个读取session的页面，也必须有此对象的`类声明` 否则从session分析出一个对象，却没有与之对应的类，则会提示`__PHP_Incomplete_Class`
 
 
+
+# 记住用户名
+
+```
+<?php
+	// 记住用户名
+	if ( isset($_POST['remember']) ) {
+		setcookie('remuser', $u, time() + 14 * 24 * 3600);
+	} else {
+		setcookie('remuser', '', 0);
+	}
+?>
+```
+

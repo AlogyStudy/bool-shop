@@ -2145,3 +2145,123 @@ insert into user (username,email,passwd,regtime) values ('user2','user2@gmial.co
 use boolshop
 set names utf8
 select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='xixi'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
