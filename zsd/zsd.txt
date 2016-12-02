@@ -139,3 +139,7 @@ give_integral 积分
 商品货号 
 详细描述，编辑器功能
 
+
+# 插入数据库
+
+source E:/goods-cate.sql
