@@ -1,3 +1,4 @@
+
 <div style="position:relative;z-index:999999" class="block">
 	<div class="page_header clearfix">
 		<div style="height:85px; " class="block">
@@ -20,19 +21,14 @@
 				</font>
 			</div>
 			<div class="page_top f_r">
-
-				<a href="#">诚聘代理</a>
-				|
-				<a href="#">查看购物车</a>
-				|
-				<a href="#">会员中心</a>
-				|
+				<a href="#">诚聘代理</a>|
+				<a href="#">查看购物车</a>|
+				<a href="#">会员中心</a> |
 				<a href="#">优惠活动</a>
-
 				<div class="telinfo">
 					<div>
 						<a href="#">
-							<img border="0" alt="中意斯QQ客服" src=""></a>
+							<img border="0" alt="中意斯QQ客服" src="./view/front/images/pa.gif"></a>
 					</div>
 				</div>
 
@@ -45,19 +41,19 @@
 			<div class="nav_list f_l">
 				<ul>
 					<li>
-						<a class="curr" href="index.php">首页</a>
+						<a <?php $cat_id = isset($_GET['cat_id']) ? $_GET['cat_id'] : 0; if ( !$cat_id ) { echo 'class="curr"'; } ?> href="index.php">首页</a>
 					</li>
 					<li>
-						<a href="category.php?cat_id=1">男士正装</a>
+						<a <?php $cat_id = isset($_GET['cat_id']) ? $_GET['cat_id'] : 0; if ( $cat_id == 1 ) { echo 'class="curr"'; } ?> href="category.php?cat_id=1">男士正装</a>
 					</li>
 					<li>
-						<a href="category.php?cat_id=4">女士正装</a>
+						<a <?php $cat_id = isset($_GET['cat_id']) ? $_GET['cat_id'] : 0; if ( $cat_id == 4 ) { echo 'class="curr"'; } ?> href="category.php?cat_id=4">女士正装</a>
 					</li>
 					<li>
-						<a href="category.php?cat_id=7">正装鞋</a>
+						<a <?php $cat_id = isset($_GET['cat_id']) ? $_GET['cat_id'] : 0; if ( $cat_id == 7 ) { echo 'class="curr"'; } ?> href="category.php?cat_id=7">正装鞋</a>
 					</li>
 					<li>
-						<a href="category.php?cat_id=10">配饰</a>
+						<a <?php $cat_id = isset($_GET['cat_id']) ? $_GET['cat_id'] : 0; if ( $cat_id == 10 ) { echo 'class="curr"'; } ?> href="category.php?cat_id=10">配饰</a>
 					</li>
 					<li>
 						<a href="#">实体店面</a>

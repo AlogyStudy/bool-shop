@@ -8,6 +8,8 @@
 	// session-cookie class [session-cookie 类]
 	// paging class [分页class]
 	// imageTool class [图片处理类]
+	
+	defined('ACC') || exit('ACC Denied');	
 		
 	class ImageTool {
 		

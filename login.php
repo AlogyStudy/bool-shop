@@ -35,7 +35,7 @@
 		} else {
 			$msg = '登陆成功';
 			// 设置session
-			session_start();
+			
 			$_SESSION = $row;
 			
 			// 记住用户名
@@ -44,7 +44,6 @@
 			} else {
 				setcookie('remuser', '', 0);
 			}
-			
 		}
 		
 		include(ROOT . 'view/front/msg.html');

@@ -5,7 +5,7 @@
 	require('./include/init.php');
 	
 	$goods_id = isset($_GET['goods_id']) ? $_GET['goods_id'] + 0 : 0;
-	
+		
 	
 	// 商品信息
 	$goods = new GoodsModel();

@@ -4,7 +4,6 @@
 	
 	require('./include/init.php');
 	
-	
 	// 取出5条新品
 	$goods = new GoodsModel();
 	
@@ -20,5 +19,4 @@
 	$manList = $goods->catGoods($man_id);
 	
 	include(ROOT . 'view/front/index.html');
-	
 ?>
