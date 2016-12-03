@@ -40,7 +40,7 @@
 		 * 查询Cate子孙树 
 		 * @param {Array} $arr 查询的所有数据 
 		 * @param {Int} $id 
-		 * @return $id栏目一下的子孙树
+		 * @return {Array} $id栏目一下的子孙树
 		 */
 		public function getCateTree( $arr, $id = 0, $lev = 0 ) {
 			
@@ -97,7 +97,7 @@
 				
 			}
 			
-			return $tree;
+			return array_reverse($tree);
 			
 		} 
 		

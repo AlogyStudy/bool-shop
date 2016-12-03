@@ -11,6 +11,11 @@
 <link rel="icon" href="http://www.zhongyis.com/animated_favicon.gif" type="image/gif">
 <link href="./view/front/css/style.css" rel="stylesheet" type="text/css">
 <link href="./view/front/css/jqzoom.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	body, a, li, p, span, font {
+		font-family: "microsoft yahei" !important;
+	}
+</style>
 </head>
 <body style="cursor: auto;">
 <div class="blockfull">
@@ -26,28 +31,34 @@
 	<div class="layout_4">
         
         <div class="layout_right"> 
-		         当前位置: <a href="#">首页</a> 
-                 
+		         当前位置: <a href="index.php">首页</a> 
             <?php foreach($nav as $c) { ?>
-            <code>&gt;</code> <a href="category.php?cat_id=<?php echo $c['cat_id'];?>"><?php echo $c['cat_name'];?></a>
+            	<code>&gt;</code> <a href="category.php?cat_id=<?php echo $c['cat_id'];?>"><?php echo $c['cat_name'];?></a>
             <?php } ?>
-                 
-                 <code>&gt;</code>  <?php echo $g['goods_name'];?> 
+            <code>&gt;</code>  <span><?php echo $g['goods_name']; ?></span> 
                  <div class="blank"></div>
         
         	<div class="shop_right_lib_comm" style="border-top:1px solid #e6e6e6">
             	<div class="innerbox clearfix">
                 	<div class="goods_info">
                     	<div class="polo_gallery f_l">
-                          
 					      <div class="goods_gallery">
                             	<div class="gup" id="gleft"></div>
                                 <div class="gcontent" id="goods_gallery" style="overflow: hidden; width: 80px; height: 400px;">
+                                	
                                 	<table>
-                                                                        <tbody><tr>
-                                    <td><div class="curr"><a href="#" onmouseover="sw_goodsimg(this)"><img src="<?php echo $g['thumb_img'];?> " alt="两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶"></a></div></td>
-                                    </tr>
-                                                                        </tbody></table>
+                                    <tbody>
+                                    	<tr>
+                                   			<td>
+                                   				<div class="curr">
+                                   					<a href="#" onmouseover="sw_goodsimg(this)">
+                                   						<img src="<?php echo $g['thumb_img'];?> " alt="<?php echo $g['goods_name']; ?>"></a>
+                                   				</div>
+                                   			</td>
+                                    	</tr>
+                                    </tbody>
+                                	</table>
+                                	
                                 </div>
                                 <div class="gdown" id="gright"></div>
                             </div>
@@ -70,15 +81,15 @@
                                 
 	                              
                         </div>
+                        
                     	<div class="goods_pics_polo f_l">
                         	<div class="goods_big_img" style="position:relative; border:1px solid #e6e6e6">
-                             <a href="#" class="jqzoom" id="picbox" style="outline-style: none; cursor: crosshair; display: block; height: 400px; width: 300px;" title="">                        	
-                              <img src="<?php echo $g['goods_img'];?> " alt="两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶" class="goodsimg" id="goods_bimg" style="position: absolute; top: 0px; left: 0px;" title="">                             </a>                             </div>
-                             <a style="line-height:25px; display:block; width:400px; height:20px; text-align:center;" href="javascript:;" onclick="window.open('gallery.php?id=315'); return false;"><img src="./view/front/images/biao3.gif"> 点击查看大图</a>
-                          
-                             
-                             
-    		  </div>
+                            <a href="#" class="jqzoom" id="picbox" style="outline-style: none; cursor: crosshair; display: block; height: 400px; width: 300px;" title="">                        	
+                            <img src="<?php echo $g['goods_img'];?> " alt="<?php echo $g['goods_img']; ?>" class="goodsimg" id="goods_bimg" style="position: absolute; top: 0px; left: 0px;" title="<?php echo $g['goods_name']; ?>">                             
+                            </a>                             
+                        	</div>
+                          <a style="line-height:25px; display:block; width:400px; height:20px; text-align:center;" href="javascript:;" onclick="window.open('gallery.php?id=<?php echo $g['goods_id']?>'); return false;"><img src="./view/front/images/biao3.gif"> 点击查看大图</a>
+    								  </div>
                     	
                         <div class="goods_intro_polo f_r">
                         	<div class="textInfo">
@@ -93,35 +104,19 @@
                  
         
             
-       <div>
-       <strong>商品货号：</strong><?php echo $g['goods_sn'];?>         </div>
-      
+       <div><strong>商品货号：</strong><?php echo $g['goods_sn'];?></div>
          
          </dd>
         </li> 
-      
-      
-      
-      
-      
-      
-      
-      
-         
-      
-  
-             
-          
-       
-                   <li class="clearfix">
-       <dd>
-       <strong>本店售价：</strong><font class="shop1" id="ECS_SHOPPRICE">￥<?php echo $g['shop_price'];?>  元</font>
+     <li class="clearfix">
+      	<dd>
+       		<strong>本店售价：</strong><font class="shop1" id="ECS_SHOPPRICE">￥<?php echo $g['shop_price'];?>  元</font>
         </dd>
       </li>
-                     <li class="clearfix">
+      <li class="clearfix">
        <dd>
-       <strong style="color:#999">市场价格：</strong><font class="market">￥<?php echo $g['market_price'];?>  元</font>
-         </dd>
+    	   <strong style="color:#999">市场价格：</strong><font class="market">￥<?php echo $g['market_price'];?>  元</font>
+       </dd>
       </li>
               
        

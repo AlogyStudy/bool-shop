@@ -28,9 +28,9 @@
             	<div class="lib_top">产品分类</div>
                 <div class="lib_mid">
                 	<ul>
-                    <?php foreach($sort as $c) { ?>
-                                        	<li class="cate_level_<?php echo $c['lev'];?>"><a href="category.php?cat_id=<?php echo $c['cat_id'];?>"><?php echo $c['cat_name'];?></a></li>
-                    <?php } ?>
+                    <?php foreach( $sortCats as $c ) { ?>
+                    	<li class="cate_level_<?php echo $c['lev']; ?>"><a href="category.php?cat_id=<?php echo $c['cat_id']; ?>"><?php echo $c['cat_name']; ?></a></li>
+                    <?php }; ?>	
 
                                                    
                     </ul>
@@ -41,28 +41,28 @@
 <div class="lib_top">销售排行</div>
   <div class="top10List clearfix">
     <ul class="clearfix">
-	<img class="iteration" src="./view/front/images/images/top_1.gif">
+	<img class="iteration" src="./view/front/images/top_1.gif">
 	
       <a title="" href="#">精疏棉涤修身正装衬衫/...</a><br>
       本店售价：<font class="f1">￥150元</font><br>
       
     </ul>
     <ul class="clearfix">
-	<img class="iteration" src="./view/front/images/images/top_2.gif">
+	<img class="iteration" src="./view/front/images/top_2.gif">
 	
       <a title="" href="#">男士长袖衬衫A52/纯...</a><br>
       本店售价：<font class="f1">￥89元</font><br>
       
     </ul>
     <ul class="clearfix">
-	<img class="iteration" src="./view/front/images/images/top_3.gif">
+	<img class="iteration" src="./view/front/images/top_3.gif">
 	
       <a title="" href="#">白色V领隐斜纹女士修身...</a><br>
       本店售价：<font class="f1">￥69元</font><br>
       
     </ul>
     <ul class="clearfix">
-	<img class="iteration" src="./view/front/images/images/top_4.gif">
+	<img class="iteration" src="./view/front/images/top_4.gif">
 	
       <a title="" href="#">两扣双开叉黑色细条纹男...</a><br>
       本店售价：<font class="f1">￥699元</font><br>
@@ -132,10 +132,11 @@
    
          
   
-            当前位置: <a href="index.php">首页</a> 
-            <?php foreach($nav as $c) { ?>
-            <code>&gt;</code> <a href="category.php?cat_id=<?php echo $c['cat_id'];?>"><?php echo $c['cat_name'];?></a>
-            <?php } ?>
+            当前位置: <a href="index.php">首页</a>
+            <?php foreach( $nav as $v ) {?>
+            	<code>&gt;</code>
+            	<a href="category.php?cat_id=<?php echo $v['cat_id']; ?>"><?php echo $v['cat_name']; ?></a>
+          	<?php }; ?>
             
             <div class="blank"></div>
     
@@ -173,41 +174,28 @@
 </div>
    
     <form onsubmit="return compareGoods(this);" method="post" action="http://www.zhongyis.com/compare.php" name="compareForm">
-     
- 
-  
-                		<div class="grid">
-       <?php foreach($goodslist as $g) { ?> 
-
-                           						                    	<div class="goodsItem">
-                        	<div class="goodsPic">
-							
-                        	<a href="goods.php?goods_id=<?php echo $g['goods_id'];?>">
-                            <img title="<?php echo $g['goods_name'];?>" class="zoom" src="<?php echo $g['thumb_img'];?>">
-                            <img alt="<?php echo $g['goods_name'];?>" src="<?php echo $g['thumb_img'];?>"></a>
-                            </div>
-                            <div class="goodsInfo">
-                            	
-                            	<div class="goodsSn"><a class="f_pname" title="<?php echo $g['goods_name'];?>" href="goods.php?goods_id=<?php echo $g['goods_id'];?>"><?php echo $g['goods_name'];?></a></div>
-                                                            	 <span class="f_gray">市场价：</span><font class="f_market">￥<?php echo $g['market_price'];?>元</font><br>
-                                                                                                本店价：<font class="f_shop">￥<?php echo $g['shop_price'];?>元</font><br>
-                                                            </div>
-                        </div>
-                           
-
-                <?php } ?>           
-                                                          
-                    </div>
-        
- 
-  
-    
-  
-  
-  
-    
-                 
-                 
+    		<div class="grid">
+	      <?php foreach( $goodsList as $g ) { ?>	
+        	<div class="goodsItem">
+          	<div class="goodsPic">
+							<a href="goods.php?goods_id=<?php echo $g['goods_id'];?>">
+                <img title="<?php echo $g['goods_name'];?>" class="zoom" src="<?php echo $g['thumb_img'];?>">
+                <img alt="<?php echo $g['goods_name'];?>" src="<?php echo $g['thumb_img'];?>">
+							</a>
+            </div>
+            <div class="goodsInfo">
+          		<div class="goodsSn">
+          			<a class="f_pname" title="<?php echo $g['goods_name'];?>" href="goods.php?goods_id=<?php echo $g['goods_id'];?>"><?php echo mb_substr($g['goods_name'], 0, 12, 'utf-8'), '...'; ?></a>
+          		</div>
+             	<span class="f_gray">市场价：</span><font class="f_market">￥<?php echo $g['market_price'];?>元</font>
+             	<br>  
+             	本店价：<font class="f_shop">￥<?php echo $g['shop_price'];?>元</font>
+             	<br>
+            </div>
+        	</div>
+        <?php }; ?>           
+                                                        
+        </div>
     </form>
     
   
@@ -238,9 +226,10 @@ var select_spe = "请选择商品属性";
                 </div>            
             </div>
             <div style=" height:25px; background:#e6eaf3;height:25px; overflow:hidden">
+            	
 <form method="get" action="http://www.zhongyis.com/category.php" name="selectPageForm">
  <div class="pagebar" id="pager">
-  <span style="margin-right:10px;" class="f_l f6">总计 <b>54</b>  个记录</span>
+  <span style="margin-right:10px;" class="f_l f6">总计 <b><?php echo count($goodsList)?></b>  个记录</span>
                       <?php echo $pagecode;?>
             
   <a href="http://www.zhongyis.com/category.php?id=17&amp;price_min=0&amp;price_max=0&amp;page=2&amp;sort=last_update&amp;order=DESC" class="next">下一页</a>    </div>

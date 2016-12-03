@@ -124,8 +124,54 @@
 			// 如果存在再次调用该函数
 			return $this->db->getOne($sql) ? $this->createSn() : $sn; 
 			
-		} 
-		 
+		}
+		
+		/**
+		 * 取出指定条数的新品
+		 * @param {Int} $n 条数
+		 * @param {String} $where 查询条件
+		 * @return {Array}  取出的结果集
+		 */ 
+		public function getNew( $n=5, $where="is_new=1" ) {
+			
+			$sql = "select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from " . $this->table . " where " . $where . " order by add_time limit " . $n;
+			
+			return $this->db->getAll($sql);
+		}
+		
+		/**
+		 * 取出指定栏目的商品
+		 * @param {Int} $cat_id 指定栏目id
+		 * @return {Array} 
+		 * 
+		 * 顶级分类没有商品
+		 * $cat_id = $_GET['cat_id'];
+		 * $sql = "..... cat_id=$cat_id"; 不正确
+		 * $cat_id 有可能对应的栏目是大栏目(顶级分类),大栏目下没有商品. 商品放在大栏目下的小栏目中.
+		 * 正确的做法是， 找出cat_id所有的子孙栏目,然后再去查询 $cat_id 及其子孙栏目下的商品. 
+		 */
+		public function catGoods( $cat_id ) {
+			
+			$cate = new CateModel(); 
+			$cats = $cate->select(); // 取出所有的栏目
+			
+			$sons = $cate->getCateTree($cats, $cat_id); // 取出给定栏目的子孙树栏目
+			
+			$cat_sub = array($cat_id);			
+			if ( !empty($sons) ) { // 不存在子孙栏目
+				foreach ( $sons as $v ) {
+					$cat_sub[] = $v['cat_id'];						
+				}
+			}
+			
+			$in = implode(',', $cat_sub);
+						
+			$sql = "select goods_id, goods_name, shop_price, market_price, thumb_img from " . $this->table . " where cat_id in(" . $in . ") order by add_time limit 5";
+			
+			return $this->db->getAll($sql);
+			
+		}	
+		
 	}
 	 
 ?>

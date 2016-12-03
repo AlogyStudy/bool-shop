@@ -143,3 +143,15 @@ give_integral 积分
 # 插入数据库
 
 source E:/goods-cate.sql
+
+
+# 读取新品
+`where is_new=1`
+
+判断子孙树 取出栏目下的对应商品.`cat_id`
+
+
+
+
+
+
