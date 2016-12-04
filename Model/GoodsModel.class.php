@@ -170,7 +170,33 @@
 			
 			return $this->db->getAll($sql);
 			
-		}	
+		}
+		
+		/**
+		 * 获取购物车中的详细信息
+		 * @param {Array} $items 购物车中的商品数组 
+		 * @return {Array} 商品数组的详细信息   
+		 */	
+		public function getCarGoods( $items ) {
+			
+			// 判断是否为空
+			if ( empty($items) ) {
+				return $items;
+			}
+			
+			// 循环中的商品
+			foreach( $items as $k=>$v ) {
+				$sql = "select goods_id, goods_name, thumb_img, market_price, cat_id from " . $this->table . " where goods_id=" . $k;
+				
+				$row = $this->db->getRow($sql);
+				
+				$items[$k]['thumb_img'] = $row['thumb_img'];
+				$items[$k]['market_price'] = $row['market_price'];
+				$items[$k]['goods_id'] = $row['goods_id'];
+			}
+			
+			return $items;
+		} 
 		
 	}
 	 

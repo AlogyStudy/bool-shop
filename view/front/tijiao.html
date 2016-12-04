@@ -11,6 +11,11 @@
 <link type="image/gif" href="animated_favicon.gif" rel="icon">
 <link type="text/css" rel="stylesheet" href="./view/front/css/style.css">
 
+<style type="text/css">
+	body, a, p, ul, li, div, font {
+		font-family: "microsoft yahei";
+	}
+</style>
 </head>
 
 <body>
@@ -81,25 +86,29 @@
               <th bgcolor="#ffffff">购买数量</th>
               <th bgcolor="#ffffff">小计</th>
             </tr>
+            
+            
             <?php foreach($items as $item) { ?>
-                        <tr>
+            <tr>
               <td bgcolor="#ffffff">
-                        <a class="f6" target="_blank" href="goods.php?id=313"><?php echo $item['name'];?></a>
-                                                  </td>
-              <td bgcolor="#ffffff">西服尺码:160/80A <br>
-西裤尺码:72cm <br>
-</td>
-                            <td bgcolor="#ffffff" align="right">￥<?php echo $item['market_price'];?>元</td>
-                            <td bgcolor="#ffffff" align="right">￥<?php echo $item['price'];?>元</td>
+                <a class="f6" target="_blank" href="goods.php?id=313"><?php echo $item['name'];?></a>
+              </td>
+              <td bgcolor="#ffffff">
+              	西服尺码:160/80A <br>西裤尺码:72cm <br>
+							</td>
+              <td bgcolor="#ffffff" align="right">￥<?php echo $item['market_price'];?>元</td>
+              <td bgcolor="#ffffff" align="right">￥<?php echo $item['price'];?>元</td>
               <td bgcolor="#ffffff" align="right"><?php echo $item['num'];?></td>
               <td bgcolor="#ffffff" align="right">￥<?php echo $item['num'] * $item['price'];?>元</td>
             </tr>
              <?php } ?>
-                                 <tr>
-              <td bgcolor="#ffffff" colspan="7">
-                            购物金额小计 ￥<?php echo $total;?>元，比市场价 ￥<?php echo $market_total;?>元 节省了 ￥<?php echo $discount;?>元 (<?php echo $rate;?>%)              </td>
+                                
+            <tr>
+              <td bgcolor="#ffffff" colspan="7">购物金额小计 ￥<?php echo $total;?>元，比市场价 ￥<?php echo $market_total;?>元 节省了 ￥<?php echo $discount;?>元 (<?php echo $rate;?>%) </td>
             </tr>
-                      </tbody></table>
+            
+            </tbody>
+        </table>
       </div>
       <div class="blank"></div>
       
@@ -145,15 +154,13 @@
           </td>
 
   </tr>
-    <tr>
-    <td bgcolor="#ffffff" align="right">
-      商品总价: <font class="f_orange_bold">￥<?php echo $total; ?>元</font>
-                                              </td>
+  <tr>
+  	<td bgcolor="#ffffff" align="right">商品总价: <font class="f_orange_bold">￥<?php echo $total; ?>元</font></td>
+	</tr>
+  <tr>
+    <td bgcolor="#ffffff" align="right"> 应付款金额: <font class="f_orange_bold">￥<?php echo $total; ?>元</font></td>
   </tr>
-    <tr>
-    <td bgcolor="#ffffff" align="right"> 应付款金额: <font class="f_orange_bold">￥<?php echo $total; ?>元</font>
-  </td>
-  </tr>
+  
 </tbody></table>
 </div>           <div align="center" style="margin:8px auto;">
             <input type="image" src="./view/front/images/bnt_subOrder.gif">
@@ -206,4 +213,5 @@
                          
 
 
-</div></div></div></div></body></html>
+</div></div></div></div></body>
+</html>

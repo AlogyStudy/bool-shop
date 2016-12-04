@@ -12,6 +12,12 @@
 <link rel="shortcut icon" href="http://www.zhongyis.com/favicon.ico">
 <link rel="icon" href="http://www.zhongyis.com/animated_favicon.gif" type="image/gif">
 <link type="text/css" rel="stylesheet" href="./view/front/css/style.css">
+
+<style type="text/css">
+	body, ul, li, a, font, div, p {
+		font-family: "microsoft yahei";
+	}
+</style>
 </head>
 
 <body>
@@ -37,44 +43,47 @@
               <th style="background:#7a7f89; color:#333">小计</th>
               <th style="background:#7a7f89; color:#333">操作</th>
             </tr>
+            
             <?php foreach($items as $item) { ?>
-
-                        <tr>
+            <tr>
               <td bgcolor="#ffffff" align="center">
-                                                      <a target="_blank" href="#"><img border="0" title="<?php echo $item['name'];?>" src="<?php echo $item['thumb_img'];?>"></a><br>
-                    <a class="f6" target="_blank" href="#"><?php echo $item['name'];?></a>
-                                                                                    </td>
-                            <td bgcolor="#ffffff">尺码:165/84A <br>
-</td>
-                                          <td bgcolor="#ffffff" align="right">￥<?php echo $item['market_price'];?>元</td>
-                            <td bgcolor="#ffffff" align="right">￥<?php echo $item['price'];?>元</td>
+                	<a href="goods.php?goods_id=<?php echo $item['goods_id']?>" target="_blank" style="width: 100px; height: 100px; overflow: hidden; display: block;"><img border="0" width="100" title="<?php echo $item['name']; ?>" src="<?php echo $item['thumb_img']; ?>" /></a><br />
+                <a class="f6" target="_blank" href="#"><?php echo $item['name']; ?></a>
+            	</td>
+            	<td bgcolor="#ffffff">尺码:165/84A <br></td>
+              <td bgcolor="#fff" align="right">￥<?php echo $item['market_price']; ?>元</td>
+              <td bgcolor="#ffffff" align="right">￥<?php echo $item['price']; ?>元</td>
               <td bgcolor="#ffffff" align="right">
-                                <input type="text" onkeydown="showdiv(this)" style="text-align:center " class="inputBg" size="4" value="<?php echo $item['num'];?>" id="goods_number_449" name="goods_number[449]">
-                              </td>
-              <td bgcolor="#ffffff" align="right">￥<?php echo $item['price'] * $item['num'];?>元</td>
+              	<input type="text" onkeydown="showdiv(this)" style="text-align:center " class="inputBg" size="4" value="<?php echo $item['num']; ?>" id="goods_number_449" name="goods_number[449]">
+              </td>
+              <td bgcolor="#ffffff" align="right">￥<?php echo $item['price'] * $item['num']; ?>元</td>
               <td bgcolor="#ffffff" align="center">
                 <a class="f6" href="#">删除</a>
-                            </td>
+              </td>
             </tr>
             <?php } ?>
+            	
                       </tbody></table>
+                      
           <table width="100%" cellspacing="1" cellpadding="5" border="0" bgcolor="#dddddd" align="center">
-            <tbody><tr>
-              <td bgcolor="#ffffff">
-                            购物金额小计 ￥<?php echo $total;?>元，比市场价 ￥<?php echo $market_total;?>元 节省了 ￥<?php echo $discount;?>元 (<?php echo $rate;?>%)              </td>
+            <tbody>
+            	
+          	<tr>
+              <td bgcolor="#ffffff">购物金额小计 ￥<?php echo $total;?>元，比市场价 ￥<?php echo $market_total;?>元 节省了 ￥<?php echo $discount;?>元 (<?php echo $rate;?>%) </td>
               <td bgcolor="#ffffff" align="right">
-                <!--input type="button" onclick="location.href='flow.php?act=clear'" class="bnt_blue_1" value="清空购物车"-->
-                <a href="flow.php?act=clear">清空购物车</a>
+                <!--<input type="button" onclick="location.href='flow.php?act=clear'" class="bnt_blue_1" value="清空购物车" />-->
+                <a href="flow.php?cat=clear">清空购物车</a>
                 <input type="submit" value="更新购物车" class="bnt_blue_1" name="submit">
               </td>
             </tr>
+            
           </tbody></table>
           <input type="hidden" value="update_cart" name="step">
         </form>
         <table width="100%" cellspacing="0" cellpadding="5" border="0" bgcolor="#dddddd" align="center">
           <tbody><tr>
             <td bgcolor="#ffffff"><a href="#"><img alt="continue" src="./view/front/images/continue.gif"></a></td>
-            <td bgcolor="#ffffff" align="right"><a href="flow.php?act=tijiao"><img alt="checkout" src="./view/front/images/checkout.gif"></a></td>
+            <td bgcolor="#ffffff" align="right"><a href="flow.php?cat=tijiao"><img alt="checkout" src="./view/front/images/checkout.gif"></a></td>
           </tr>
         </tbody></table>
        

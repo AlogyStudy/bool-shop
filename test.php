@@ -3,8 +3,9 @@
 <?php
 
 	define('ACC', true);
+
 	
-//	require('include/init.php');
+	require('include/init.php');
 //	
 //	require(ROOT . 'tools/UpTool.class.php');
 //	
@@ -34,9 +35,11 @@
 	
 //	echo date('Ymd', time());
 
-	var_dump(filter_var('bob@example.com', FILTER_VALIDATE_EMAIL));
-	var_dump(filter_var('123123', FILTER_VALIDATE_EMAIL));
-	var_dump(filter_var('http://www.linxingzhang.com', FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED));
+//	var_dump(filter_var('bob@example.com', FILTER_VALIDATE_EMAIL));
+//	var_dump(filter_var('123123', FILTER_VALIDATE_EMAIL));
+//	var_dump(filter_var('http://www.linxingzhang.com', FILTER_VALIDATE_URL, FILTER_FLAG_PATH_REQUIRED));
 	
+	
+//	include(ROOT . 'view/front/jiesuan.html');
 
 ?>

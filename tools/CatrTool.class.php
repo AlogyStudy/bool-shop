@@ -36,9 +36,7 @@
 	 * 清空购物车
 	 */
 	
-//	defined('ACC') || exit('ACC Denied');	
-	
-	session_start();
+	defined('ACC') || exit('ACC Denied');
 	
 	class CatrTool {
 		
@@ -81,17 +79,190 @@
 		
 		/**
 		 * 添加商品
-		 * @param {Int} $goods_id 商品id
-		 * @param {String} $goods_name 商品名称
-		 * @param {Float} $shop_price 单个商品价格
-		 * @param {Int} $shop_num 购买的个数  
+		 * @param {Int} $id 商品主键
+		 * @param {String} $name 商品名称
+		 * @param {Float} $price 单个商品价格
+		 * @param {Int} $num 购买的个数
+		 *   
 		 */
-		public function addItem( $goods_id, $goods_name, $shop_price, $shop_num ) {
+		public function addItem( $id, $name, $price, $num=1 ) {
 			
+			if ( $this->hasItem($id) ) { // 如果该商品已经存在，则直接加其数量
+				$this->incNum($id, $num);
+				return ;
+			}
+			
+			// 利用 `goods_id` 作为数组的下标
+			$item = array();
+			$item['name'] = $name;
+			$item['price'] = $price;
+			$item['num'] = $num;
+			
+			$this->items[$id] = $item; // 二维数组
+			return $this->items;
 		}
+		
+		/**
+		 * 清空购物车
+		 */
+		public function clearItem() {
+			$this->items = array();
+		} 
+		
+		/**
+		 * 判断某商品是否存在
+		 * @param {Int} $id 商品主键
+		 * @return {Boolean} 是否存在该商品
+		 */
+		public function hasItem( $id ) {
+			return array_key_exists($id, $this->items);
+		} 
+		
+		/**
+		 * 修改购物车的商品数量 
+		 * @param {Int} $id 商品主键
+		 * @param {Int} $num 当前主键修改后的商品数量
+		 * @return {Boolean} 修改是否成功
+		 */
+		public function modNum( $id, $num=1 ) {
+			// 判断是否存在该商品
+			if ( !$this->hasItem($id) ) {
+				return false;
+			}
+			
+			// 存在该商品，修改商品数量
+			$this->items[$id]['num'] = $num;
+			return true;
+		}
+		
+		/**
+		 * 商品数量增加加
+		 * @param {Int} $id 商品主键
+		 * @param {Int} $num 商品自增个数
+		 * @return {Boolean} 是否增加成功 
+		 */ 
+		public function incNum( $id, $num ) {
+			// 判断是否存在该商品
+			if ( !$this->hasItem($id) ) {
+				return false;
+			}
+			
+			$this->items[$id]['num'] += 1;
+			return true;
+		}
+		
+		/**
+		 * 商品数量减键
+		 * @param {Int} $id 商品主键
+		 * @param {Int} $num 商品自减个数
+		 * @return {Boolean} 是否减少成功
+		 */
+		public function decNum( $id, $num=1 ) {
+			
+			// 判断是否存在该商品
+			if ( !$this->hasItem($id) ) {
+				return false;
+			}
+			
+			$this->items[$id]['num'] -= $num;
+			
+			// 如果减少为  小于 0, 删除该商品
+			if ( $this->items[$id]['num'] <= 0 ) {
+				$this->delItem($id);
+			}
+			
+			return true;
+		}
+		
+		/**
+		 * 删除某个商品
+		 * @param {Int} $id 商品主键
+		 * @return {Boolean} 是否删除成功
+		 */
+		public function delItem( $id ) {
+			unset($this->items[$id]);
+		} 
+		
+		/**
+		 * 查询购物车商品的种类 
+		 * @return {Int} 返回存储购物车的数组单元个数
+		 */
+		public function getCnt() {
+			return count($this->items);
+		} 
+		
+		/**
+		 * 查询购物车中商品个数
+		 * @return {Int} 返回商品个数
+		 */
+		public function getNum() {
+			
+			if ( $this->getCnt() == 0 ) {
+				return 0;
+			}
+			
+			$sum = 0;
+			foreach( $this->items as $item ) {
+				$sum += $item['num'];
+			}
+			return $sum;
+		} 
+		
+		/**
+		 * 查询购物车中商品的总金额
+		 * @return {Int} 总金额
+		 */
+		public function getPrice() {
+			
+			// 购物车中是空的
+			if ( $this->getCnt() == 0 ) {
+				return 0;
+			}
+			
+			$price = 0.0;
+			foreach( $this->items as $item ) {
+				$price += $item['price'] * $item['num'];
+			}
+			
+			return $price;
+		} 
+		
+		/**
+		 * 返回购物车中的所有商品
+		 * @return {Array} 所有购物车的商品信息
+		 */
+		public function all() {
+			return $this->items;	
+		}
+		
 	}
 
+
+
+/**
+ 测试结果 
+	$cart = CatrTool::getCar();
 	
-//	var_dump(CatrTool::getCar());
+	$add = isset($_GET['test']) ? $_GET['test'] : '';
+	
+	if ( $add == 'add' ) {
+		$cart->addItem(10, 'xixi', 10000, 1);
+		echo 'ok xixi';
+	} else if ( $add == 'clear' ) {
+		$cart->clearItem();
+		echo 'qingchu ok';
+	} else if ( $add == 'show' ) {
+		print_r($cart->all());
+		echo '<hr />';
+		echo '共' . $cart->getCnt() . '种商品<br />';
+		echo '共' . $cart->getNum() . '个商品<br />';
+		echo '共' . $cart->getPrice() . '多少钱<br />';
+	} else if ( $add == 'addpink' ) {
+		$cart->addItem(1, 'pink', 100.23, 2);
+		echo 'ok pink';
+	} else {
+		print_r($cart);
+	}
+**/	
 	
 ?>

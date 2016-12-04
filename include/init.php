@@ -12,7 +12,7 @@ defined('ACC') || exit('ACC Denied');
 
 // echo substr(str_replace('\\', '/', __FILE__), 0, -8);
 // 换成`/`正斜线，因为：win和linux都支持正斜线，而linux不支持反斜线.
-define('ROOT',dirname(dirname(str_replace('\\', '/', __FILE__))) . '/');
+define('ROOT', dirname(dirname(str_replace('\\', '/', __FILE__))) . '/');
 define('DEBUG', true);
 
 
@@ -25,13 +25,15 @@ define('DEBUG', true);
 // require(ROOT . 'Model/TestModel.class.php');
 
 require(ROOT . 'include/lib_base.php'); // 基础函数
+
 // 自动加载`CLASS`
 function __autoload( $class ) {
 	
 	if ( strtolower(substr($class, -5)) == 'model' ) {
 		require(ROOT . 'Model/'. $class . '.class.php');
 	} else if ( strtolower(substr($class, -4)) == 'tool' ) {
-		require(ROOT . 'tools/' . $class . '.class.php');
+//		require(ROOT . 'tools/' . $class . '.class.php');
+		require(dirname(dirname(str_replace('\\', '/', __FILE__))) . '/' . 'tools/' . $class . '.class.php');
 	} else {
 		require(ROOT . 'include/'. $class . '.class.php');
 	} 

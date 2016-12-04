@@ -83,3 +83,34 @@ CREATE TABLE USER(
 	regtime INT UNSIGNED NOT NULL DEFAULT 0 COMMENT '当前的时间戳',
 	lastlogin INT UNSIGNED NOT NULL DEFAULT 0 COMMENT '上次登陆时间'
 ) ENGINE MYISAM CHARSET utf8;
+
+
+
+
+# 创建订单表
+
+# 配送区域, 收货人姓名, 电子邮件地址, 详细地址, 邮政编码, 电话, 手机, 标志建筑, 最佳送货时间.
+
+create table orderinfo (
+	order_id ,
+	order_sn ,
+	zone ,
+	address ,
+	zipcode ,
+	reciver , 
+	email ,
+	tel ,
+	mobile ,
+	building ,
+	best_time ,
+	add_time ,
+	order_amount ,
+	pay , 
+) engine myisam charset utf8;
+
+
+# 订单与商品对应表
+
+create table ordergoods (
+	
+) engine myisam charset utf8;

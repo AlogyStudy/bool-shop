@@ -151,6 +151,17 @@ source E:/goods-cate.sql
 判断子孙树 取出栏目下的对应商品.`cat_id`
 
 
+# 用户登陆
+
+session - cookie
+
+# cookie记住用户名
+写cookie到浏览器.
+
+# 购物车类的开发
+
+
+# 下订单
 
 
 
