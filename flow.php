@@ -100,6 +100,78 @@
 		$rate = round(100 * $discount / $total, 2); 
 		
 		include(ROOT . 'view/front/tijiao.html');
+	} else if ( $cat == 'done' ) {
+		// 订单入库
+		
+		/**
+		 * 从 表单中 搜集 数据 , 从购物车 读取 总价格等信息 , 写入 `orderinfo` 表
+		 */
+		 
+//Array ( 
+//[zone] => 厦门 
+//[reciver] => linx 
+//[email] => 1129507496@qq.com 
+//[address] => 福建厦门湖里区 
+//[zipcode] => 365100 
+//[tel] => 8795215 
+//[mobile] => 13164889430 
+//[building] => 建筑 
+//[best_time] => 下午 
+//[pay] => 4 
+//[x] => 53 
+//[y] => 6 
+//[step] => done
+//)
+		 		 
+		$orderInfo = new OrderInfoModel(); // 订单模型
+		
+		// 自动验证
+		if ( !$orderInfo->_validate($_POST) ) {
+			// 数据检验，不通过.
+			$msg = implode($orderInfo->getError());
+			include(ROOT . 'view/front/msg.html');
+			exit;
+		};
+	
+		// 自动过滤
+		$data = $orderInfo->_facade($_POST);
+				
+		// 自动填充
+		$data = $orderInfo->_autoFill($data);
+		
+		// 写入总金额
+		$data['order_amount'] = $cart->getPrice();
+		
+		// 写入用户名,从session读取
+		$data['user_id'] = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : 0; // 没有读取到匿名
+		$data['username'] = isset($_SESSION['username']) ? $_SESSION['username'] : '匿名'; // 没有读取到匿名
+		
+			
+		// 写入数据库		
+		if (!$orderInfo->add($data)) {
+			// 订单失败
+			$msg = '下订单失败';
+			include(ROOT . 'view/front/msg.html');
+			exit;
+		};		
+		
+		
+		
+		// 1. 订单对应的商品表，  写入
+		// 2. 订单引起的库存减少
+		// 3. 订单完成后，要清空购物车
+		
+		
+		// 把订单的商品写入数据库
+		
+		// 把商品的数量减少
+		
+		// 清空购物车
+		
+		
+		
 	} 
 
 ?>
+
+

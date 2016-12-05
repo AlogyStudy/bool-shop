@@ -6519,3 +6519,288 @@ use boolshop
 set names utf8
 select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
 select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 5
+use boolshop
+set names utf8
+select * from category where cat_id=4
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+use boolshop
+set names utf8
+select * from goods where goods_id=11
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from goods where goods_id=11
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time) values ('厦门','linx','1129507496@qq.com','福建厦门','','13164889430','','','','4','1480867687')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select * from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time) values ('厦门','linx','1129507496@qq.com','福建厦门','','13164889430','','','','4','1480868248')
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time) values ('厦门','linx','1129507496@qq.com','福建厦门','365100','8795215','13164889430','中心','上午','4','1480868298')
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username) values ('厦门','zf','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1480868597','1731','0','')
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=3
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=4
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 5
+use boolshop
+set names utf8
+select * from category where cat_id=4
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+use boolshop
+set names utf8
+select * from goods where goods_id=8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from goods where goods_id=8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=8
+use boolshop
+set names utf8
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username) values ('福建','ting','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心河','下午','4','1480868727','482','40','username')

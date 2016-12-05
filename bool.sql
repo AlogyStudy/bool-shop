@@ -88,29 +88,37 @@ CREATE TABLE USER(
 
 
 # 创建订单表
-
 # 配送区域, 收货人姓名, 电子邮件地址, 详细地址, 邮政编码, 电话, 手机, 标志建筑, 最佳送货时间.
-
 create table orderinfo (
-	order_id ,
-	order_sn ,
-	zone ,
-	address ,
-	zipcode ,
-	reciver , 
-	email ,
-	tel ,
-	mobile ,
-	building ,
-	best_time ,
-	add_time ,
-	order_amount ,
-	pay , 
+	order_id int unsigned not null auto_increment primary key,
+	order_sn char(15) not null default '',
+	user_id int unsigned not null default 0 comment "用户id",
+	username varchar(20) not null default '' comment "用户名称",
+	zone varchar(30) not null default '' comment "配送区域",
+	address varchar(30) not null default '' comment "地址",
+	zipcode char(6) not null default '' comment "邮编",
+	reciver varchar(30) not null default '' comment "收货人姓名", 
+	email varchar(40) not null default '',
+	tel varchar(20) not null default '',
+	mobile char(11) not null default '',
+	building varchar(30) not null default '' comment "标志性建筑",
+	best_time varchar(10) not null default '' comment "最佳时间",
+	add_time int unsigned not null default 0 comment "增加时间",
+	order_amount decimal(10, 2) not null default 0.0 comment "总金额",
+	pay tinyint(1) not null default 0 comment "支付方式" 
 ) engine myisam charset utf8;
 
 
 # 订单与商品对应表
-
+# 通过`order_id`与`order_sn`与订单表关联起来.
 create table ordergoods (
-	
+	og_id int auto_increment unsigned primary key comment "流水id",
+	order_id int unsigned not null default 0 comment "订单id",
+	order_sn char(15) not null default '' comment "订单编号",
+	goods_id int unsigned not null default 0 comment "商品id",
+	goods_name varchar(60) not null default '',
+	goods_number smallint not null default 0 comment "商品数量",
+	shop_price decimal(10, 2) not null default 0.0 comment "商品价格",
+	subtotal decimal(10, 2) not null default 0.0 comment "小计价格"
 ) engine myisam charset utf8;
+
