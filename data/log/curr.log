@@ -6804,3 +6804,196 @@ select goods_id, goods_name, thumb_img, market_price, cat_id from goods where go
 use boolshop
 set names utf8
 insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username) values ('福建','ting','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心河','下午','4','1480868727','482','40','username')
+use boolshop
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where is_new=1 order by add_time limit 5
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where cat_id=5 or cat_id=6 order by add_time limit 6
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where cat_id=2 or cat_id=3 order by add_time limit 6
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 5
+use boolshop
+set names utf8
+select * from category where cat_id=4
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+use boolshop
+set names utf8
+select * from goods where goods_id=7
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from goods where goods_id=7
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+use boolshop
+set names utf8
+select user_id, username, email, passwd from user where username='username'
+use boolshop
+set names utf8
+select * from category where cat_id=4
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+use boolshop
+set names utf8
+select * from goods where goods_id=7
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from goods where goods_id=7
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn=OI20161205762500
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','福建厦门','365100','8795215','13164889430','中心','上午','4','1480951104','567','40','username','OI20161205762500')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn=OI20161205996791
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn=OI20161205772555
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205175071'
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205795595'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','福建厦门','365100','8795215','13164889430','中心','上午','4','1480951317','567','40','username','OI20161205795595')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205440044'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','福建厦门','365100','8795215','13164889430','中心','上午','4','1480951328','567','40','username','OI20161205440044')
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205770922'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1480951384','567','40','username','OI20161205770922')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205215181'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1480951731','567','40','username','OI20161205215181')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205448216'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1480952396','567','40','username','OI20161205448216')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205862129'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1480952515','567','40','username','OI20161205862129')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205723743'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1480952554','567','40','username','OI20161205723743')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205197817'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1480952591','567','40','username','OI20161205197817')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205133956'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1480952671','567','40','username','OI20161205133956')
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+use boolshop
+set names utf8
+select * from category where cat_id=4
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+use boolshop
+set names utf8
+select * from goods where goods_id=9
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from goods where goods_id=9
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=9
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=9
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205227503'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','','','','','','','4','1480952716','885','40','username','OI20161205227503')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205255445'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','','','','','','','4','1480953382','885','40','username','OI20161205255445')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205861710'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','','','','','','','4','1480954133','885','40','username','OI20161205861710')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205877635'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','','','','','','','4','1480954159','885','40','username','OI20161205877635')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205858316'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','','','','','','','4','1480954169','885','40','username','OI20161205858316')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205493868'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','','','','','','','4','1480954205','885','40','username','OI20161205493868')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205278476'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','','','','','','','4','1480954255','885','40','username','OI20161205278476')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205572492'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','','','','','','','4','1480954280','885','40','username','OI20161205572492')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205134968'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','','','','','','','4','1480954282','885','40','username','OI20161205134968')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161205133598'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','','','','','','','4','1480954287','885','40','username','OI20161205133598')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('25','OI20161205133598','7','枪驳大领面后开叉短款两扣女士正装','1','567.00','567')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('25','OI20161205133598','9','本白压褶下摆短袖套裙','1','318.00','318')

@@ -271,6 +271,14 @@
 			return $this->error;
 		}
 		
+		/**
+		 * 返回主键的`id` 
+		 * 返回最新的auto_increment列的自增长的值
+		 */
+		public function insert_id() {
+			return $this->db->insert_id();
+		} 
+		
 	}
 
 ?>

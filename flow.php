@@ -145,8 +145,10 @@
 		// 写入用户名,从session读取
 		$data['user_id'] = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : 0; // 没有读取到匿名
 		$data['username'] = isset($_SESSION['username']) ? $_SESSION['username'] : '匿名'; // 没有读取到匿名
+	
+		// 写入订单号
+		$order_sn = $data['order_sn'] = $orderInfo->orderSn();
 		
-			
 		// 写入数据库		
 		if (!$orderInfo->add($data)) {
 			// 订单失败
@@ -156,18 +158,51 @@
 		};		
 		
 		
-		
-		// 1. 订单对应的商品表，  写入
-		// 2. 订单引起的库存减少
-		// 3. 订单完成后，要清空购物车
-		
+		// 获取 order_id
+		$order_id = $orderInfo->insert_id();
 		
 		// 把订单的商品写入数据库
+		/**
+		 * 1个订单中有N个商品，可以循环写入`ordergoods` 表
+		 */
+		$items = $cart->all(); // 返回购物车中所有商品
 		
+		
+		// orderGoods 操作model
+		$orderGoods = new OrderGoodsModel();
+		
+		// 循环订单中的商品，写入 `ordergoods`表	
+		$cnt = 0;
+		foreach ( $items as $k=>$v ) {
+			
+			$data = array();
+			
+			
+			$data['order_id'] = $order_id;  
+			$data['order_sn'] = $order_sn;
+			$data['goods_id'] = $k;
+			$data['godos_name'] = $v['name'];
+			$data['goods_number'] = $v['num'];
+			$data['shop_price'] = $v['price'];
+			$data['subtotal'] = $v['price'] * $v['num']; 
+			
+			// 写入`ordergoods`表
+			if ( $orderGoods->addOG($data) ) {
+				$cnt += 1; // 写入一条 OG 成功，
+				// 一个订单有N条商品, 必须N条商品，都插入成功，才算订单插入成功.
+			}
+			
+		}
+		
+		// 判断是否全部写入成功
+		if ( count($items) != $cnt ) { // 购物车中的商品数量没有全部入库成功
+			// 撤销此订单
+			
+		}
+				
 		// 把商品的数量减少
 		
 		// 清空购物车
-		
 		
 		
 	} 
