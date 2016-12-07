@@ -6997,3 +6997,394 @@ select count(*) from orderinfo where order_sn='OI20161205133598'
 insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','陈海珍','1129507496@qq.com','','','','','','','4','1480954287','885','40','username','OI20161205133598')
 insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('25','OI20161205133598','7','枪驳大领面后开叉短款两扣女士正装','1','567.00','567')
 insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('25','OI20161205133598','9','本白压褶下摆短袖套裙','1','318.00','318')
+use boolshop
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where is_new=1 order by add_time limit 5
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where cat_id=5 or cat_id=6 order by add_time limit 6
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where cat_id=2 or cat_id=3 order by add_time limit 6
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 5
+use boolshop
+set names utf8
+select * from goods where goods_id=7
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from goods where goods_id=7
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=7
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161206906961'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林兴樟','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','','','4','1481041315','567','0','匿名','OI20161206906961')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('1','OI20161206906961','7','枪驳大领面后开叉短款两扣女士正装','1','567.00','567')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161206807675'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林兴樟','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','','','4','1481041360','567','0','匿名','OI20161206807675')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('2','OI20161206807675','7','枪驳大领面后开叉短款两扣女士正装','1','567.00','567')
+delete from orderinfo where order_id=2
+delete from ordergoods where order_id = 2
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161206913756'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林兴樟','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','','','4','1481041584','567','0','匿名','OI20161206913756')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161206302931'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林兴樟','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','','','4','1481041590','567','0','匿名','OI20161206302931')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161206911573'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林兴樟','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','','','4','1481041606','567','0','匿名','OI20161206911573')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('5','OI20161206911573','7','枪驳大领面后开叉短款两扣女士正装','1','567.00','567')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161206350349'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林兴樟','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','','','4','1481041611','567','0','匿名','OI20161206350349')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('6','OI20161206350349','7','枪驳大领面后开叉短款两扣女士正装','1','567.00','567')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161206367389'
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161206194403'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林兴樟','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','','','4','1481041699','567','0','匿名','OI20161206194403')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('7','OI20161206194403','7','枪驳大领面后开叉短款两扣女士正装','1','567.00','567')
+use boolshop
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where is_new=1 order by add_time limit 5
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where cat_id=5 or cat_id=6 order by add_time limit 6
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where cat_id=2 or cat_id=3 order by add_time limit 6
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 5
+use boolshop
+set names utf8
+select * from category where cat_id=4
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+use boolshop
+set names utf8
+select * from goods where goods_id=11
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from goods where goods_id=11
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207570290'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1481117397','42','0','匿名','OI20161207570290')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('8','OI20161207570290','11','纯白斜条棉涤女士衬衫','1','42.00','42')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207514521'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1481117496','42','0','匿名','OI20161207514521')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('9','OI20161207514521','11','纯白斜条棉涤女士衬衫','1','42.00','42')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207512243'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1481117543','42','0','匿名','OI20161207512243')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('10','OI20161207512243','11','纯白斜条棉涤女士衬衫','1','42.00','42')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207615429'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1481117554','42','0','匿名','OI20161207615429')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('11','OI20161207615429','11','纯白斜条棉涤女士衬衫','1','42.00','42')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207990206'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1481117578','42','0','匿名','OI20161207990206')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('12','OI20161207990206','11','纯白斜条棉涤女士衬衫','1','42.00','42')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207552150'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1481117595','42','0','匿名','OI20161207552150')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('13','OI20161207552150','11','纯白斜条棉涤女士衬衫','1','42.00','42')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207551485'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1481118750','42','0','匿名','OI20161207551485')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('1','OI20161207551485','11','纯白斜条棉涤女士衬衫','1','42.00','42')
+delete from orderinfo where order_id=1
+delete from ordergoods where order_id = 1use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207987375'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('厦门','林','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1481118846','42','0','匿名','OI20161207987375')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('2','OI20161207987375','11','纯白斜条棉涤女士衬衫','1','42.00','42')
+delete from orderinfo where order_id=2
+delete from ordergoods where order_id = 2
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select * from goods where goods_id=11
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+use boolshop
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where is_new=1 order by add_time limit 5
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where cat_id=5 or cat_id=6 order by add_time limit 6
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where cat_id=2 or cat_id=3 order by add_time limit 6
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 5
+use boolshop
+set names utf8
+select * from category where cat_id=4
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+use boolshop
+set names utf8
+select * from goods where goods_id=11
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=4
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+use boolshop
+set names utf8
+select * from goods where goods_id=8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from goods where goods_id=8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=8
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207484868'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481118941','566','0','匿名','OI20161207484868')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('3','OI20161207484868','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('3','OI20161207484868','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+delete from orderinfo where order_id=3
+delete from ordergoods where order_id = 3
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=8
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207263539'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481118967','566','0','匿名','OI20161207263539')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('4','OI20161207263539','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('4','OI20161207263539','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207112491'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481118996','566','0','匿名','OI20161207112491')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207993431'
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207340479'
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207661354'
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207726077'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119506','566','0','匿名','OI20161207726077')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207704244'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119519','566','0','匿名','OI20161207704244')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('8','OI20161207704244','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('8','OI20161207704244','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207440229'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119538','566','0','匿名','OI20161207440229')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('9','OI20161207440229','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207623542'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119552','566','0','匿名','OI20161207623542')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207420045'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119569','566','0','匿名','OI20161207420045')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('11','OI20161207420045','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207803577'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119587','566','0','匿名','OI20161207803577')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('12','OI20161207803577','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207155508'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119608','566','0','匿名','OI20161207155508')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('13','OI20161207155508','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207295475'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119615','566','0','匿名','OI20161207295475')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('14','OI20161207295475','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207623713'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119621','566','0','匿名','OI20161207623713')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('15','OI20161207623713','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207807801'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119631','566','0','匿名','OI20161207807801')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('16','OI20161207807801','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('16','OI20161207807801','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('16','OI20161207807801','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('16','OI20161207807801','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207404565'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119636','566','0','匿名','OI20161207404565')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('17','OI20161207404565','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('17','OI20161207404565','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('17','OI20161207404565','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('17','OI20161207404565','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207472545'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119647','566','0','匿名','OI20161207472545')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('18','OI20161207472545','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('18','OI20161207472545','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('18','OI20161207472545','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('18','OI20161207472545','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=8
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207296062'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119657','566','0','匿名','OI20161207296062')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('19','OI20161207296062','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('19','OI20161207296062','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('19','OI20161207296062','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+insert into ordergoods (order_id,order_sn,goods_id,godos_name,goods_number,shop_price,subtotal) values ('19','OI20161207296062','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=11
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=8
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207858475'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119900','566','0','匿名','OI20161207858475')
+insert into ordergoods (order_id,order_sn,goods_id,goods_name,goods_number,shop_price,subtotal) values ('21','OI20161207858475','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+update goods set goods_number = goods_number - 2 where goods_id = 11
+insert into ordergoods (order_id,order_sn,goods_id,goods_name,goods_number,shop_price,subtotal) values ('21','OI20161207858475','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+update goods set goods_number = goods_number - 1 where goods_id = 8
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207804461'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119947','566','0','匿名','OI20161207804461')
+insert into ordergoods (order_id,order_sn,goods_id,goods_name,goods_number,shop_price,subtotal) values ('1','OI20161207804461','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+update goods set goods_number = goods_number - 2 where goods_id = 11
+insert into ordergoods (order_id,order_sn,goods_id,goods_name,goods_number,shop_price,subtotal) values ('1','OI20161207804461','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+update goods set goods_number = goods_number - 1 where goods_id = 8
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207864315'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','林','1129507496@qq.com','福建厦门','365100','8795215','13164889430','','','4','1481119988','566','0','匿名','OI20161207864315')
+insert into ordergoods (order_id,order_sn,goods_id,goods_name,goods_number,shop_price,subtotal) values ('2','OI20161207864315','11','纯白斜条棉涤女士衬衫','2','42.00','84')
+update goods set goods_number = goods_number - 2 where goods_id = 11
+insert into ordergoods (order_id,order_sn,goods_id,goods_name,goods_number,shop_price,subtotal) values ('2','OI20161207864315','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+update goods set goods_number = goods_number - 1 where goods_id = 8
+use boolshop
+set names utf8
+use boolshop
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where is_new=1 order by add_time limit 5
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where cat_id=5 or cat_id=6 order by add_time limit 6
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where cat_id=2 or cat_id=3 order by add_time limit 6
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 5
+use boolshop
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where is_new=1 order by add_time limit 5
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where cat_id=5 or cat_id=6 order by add_time limit 6
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where cat_id=2 or cat_id=3 order by add_time limit 6
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 5
+use boolshop
+set names utf8
+select * from goods where goods_id=8
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from goods where goods_id=8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=8
+use boolshop
+set names utf8
+select goods_id, goods_name, thumb_img, market_price, cat_id from goods where goods_id=8
+use boolshop
+set names utf8
+select count(*) from orderinfo where order_sn='OI20161207849612'
+insert into orderinfo (zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) values ('福建','福建厦门','1129507496@qq.com','福建厦门湖里区','365100','8795215','13164889430','中心','上午','4','1481120606','482','0','匿名','OI20161207849612')
+insert into ordergoods (order_id,order_sn,goods_id,goods_name,goods_number,shop_price,subtotal) values ('1','OI20161207849612','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+update goods set goods_number = goods_number - 1 where goods_id = 8
+use boolshop
+set names utf8
+select * from goods where goods_id=7
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where is_new=1 order by add_time limit 5
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where cat_id=5 or cat_id=6 order by add_time limit 6
+select goods_id, goods_name, shop_price, market_price, thumb_img, ori_img from goods where cat_id=2 or cat_id=3 order by add_time limit 6
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(4,5,6) order by add_time limit 5
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 5
+use boolshop
+set names utf8
+select * from goods where goods_id=7
+select cat_id, cat_name, parent_id from category
+use boolshop
+set names utf8
+select * from category where cat_id=5
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(5) order by add_time limit 5
+use boolshop
+set names utf8
+select * from category where cat_id=2
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(2) order by add_time limit 5

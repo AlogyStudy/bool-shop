@@ -58,6 +58,7 @@
 		/**
 		 * 撤销订单
 		 * @param {Int} $order_id 订单Id
+		 * @return {Boolean} 
 		 */
 		public function invoke( $order_id ) {
 			

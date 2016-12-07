@@ -20,7 +20,6 @@
 				
 				return $this->db->query($sql); // 减少库存  
 			} 
-			
 			return false;	
 			
 		}

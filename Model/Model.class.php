@@ -91,9 +91,7 @@
 		 * @return {Boolean} 返回添加是否成功	
 		 */
 		public function add( $data ) {
-			
 			return $this->db->autoExecute($this->table, $data);
-			
 		}
 		
 		/**

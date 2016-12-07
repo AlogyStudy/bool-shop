@@ -123,7 +123,7 @@
 			$sql .= ' values (\'';
 			$sql .= implode("','", array_values($arr));
 			$sql .= '\')';
-						
+					
 			return $this->query($sql);
 			
 		}

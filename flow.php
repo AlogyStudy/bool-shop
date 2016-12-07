@@ -97,7 +97,9 @@
 		}
 		
 		$discount = $market_total - $total;
-		$rate = round(100 * $discount / $total, 2); 
+		if ( $total != 0 ) {
+			$rate = round(100 * $discount / $total, 2); 
+		}
 		
 		include(ROOT . 'view/front/tijiao.html');
 	} else if ( $cat == 'done' ) {
@@ -140,7 +142,7 @@
 		$data = $orderInfo->_autoFill($data);
 		
 		// 写入总金额
-		$data['order_amount'] = $cart->getPrice();
+		$total = $data['order_amount'] = $cart->getPrice();
 		
 		// 写入用户名,从session读取
 		$data['user_id'] = isset($_SESSION['user_id']) ? $_SESSION['user_id'] : 0; // 没有读取到匿名
@@ -177,11 +179,10 @@
 			
 			$data = array();
 			
-			
 			$data['order_id'] = $order_id;  
 			$data['order_sn'] = $order_sn;
 			$data['goods_id'] = $k;
-			$data['godos_name'] = $v['name'];
+			$data['goods_name'] = $v['name'];
 			$data['goods_number'] = $v['num'];
 			$data['shop_price'] = $v['price'];
 			$data['subtotal'] = $v['price'] * $v['num']; 
@@ -197,13 +198,15 @@
 		// 判断是否全部写入成功
 		if ( count($items) != $cnt ) { // 购物车中的商品数量没有全部入库成功
 			// 撤销此订单
-			
+			$orderInfo->invoke($order_id);
+			$msg = '下订单失败';
+			include(ROOT . 'view/front/msg.html');
+			exit;
 		}
-				
-		// 把商品的数量减少
 		
-		// 清空购物车
-		
+		// 下订单成功 (清空购物车，商品数量减少)
+		$cart->clearItem();
+		include(ROOT . 'view/front/order.html');
 		
 	} 
 
