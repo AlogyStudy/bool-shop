@@ -150,7 +150,7 @@
 		 * $cat_id 有可能对应的栏目是大栏目(顶级分类),大栏目下没有商品. 商品放在大栏目下的小栏目中.
 		 * 正确的做法是， 找出cat_id所有的子孙栏目,然后再去查询 $cat_id 及其子孙栏目下的商品. 
 		 */
-		public function catGoods( $cat_id ) {
+		public function catGoods( $cat_id, $offset=0, $limit=5 ) {
 			
 			$cate = new CateModel(); 
 			$cats = $cate->select(); // 取出所有的栏目
@@ -166,7 +166,7 @@
 			
 			$in = implode(',', $cat_sub);
 						
-			$sql = "select goods_id, goods_name, shop_price, market_price, thumb_img from " . $this->table . " where cat_id in(" . $in . ") order by add_time limit 5";
+			$sql = "select goods_id, goods_name, shop_price, market_price, thumb_img from " . $this->table . " where cat_id in(" . $in . ") order by add_time limit " . $offset . ',' . $limit;
 			
 			return $this->db->getAll($sql);
 			

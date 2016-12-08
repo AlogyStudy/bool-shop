@@ -6,9 +6,20 @@
 	
 	
 	$cat_id = isset($_GET['cat_id']) ? $_GET['cat_id'] + 0 : 0;
+	$page = isset($_GET['page']) ? $_GET['page'] + 0 : 1; // 默认第一页
+	
+	// $page page 不可能小于 1 , 不可能为负数
+	if ( $page < 1 ) {
+		$page = 1;
+	}
 	
 	$cat = new CateModel();
 	$category = $cat->find($cat_id);
+
+	/********** 计算分页 **********/ 
+	$perpage = 2; // 每页取 2 条
+	$offset = ($page - 1) * $perpage; // 计算偏移
+	/********** 计算分页 **********/ 
 	
 	// 不存在cat_id , 返回首页
 	if ( empty($category) ) { 
@@ -26,9 +37,8 @@
 	
 	// 栏目下的商品  [需要cate_id]
 	$goods = new GoodsModel();
-	$goodsList = $goods->catGoods($cat_id);
+	$goodsList = $goods->catGoods($cat_id, $offset, $perpage);
 	
 	
 	include(ROOT . 'view/front/lanmu.html');
-
 ?>

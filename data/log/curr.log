@@ -7388,3 +7388,87 @@ select cat_id, cat_name, parent_id from category
 select cat_id, cat_name, parent_id from category
 select cat_id, cat_name, parent_id from category
 select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(2) order by add_time limit 5
+use boolshop
+set names utf8
+select * from category where cat_id=2
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(2) order by add_time limit 0,2
+use boolshop
+set names utf8
+select * from category where cat_id=2
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(2) order by add_time limit 2,2
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 0,2
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 2,2
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 4,2
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 6,2
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 0,2
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 2,2
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 4,2
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 6,2
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 0,2
+use boolshop
+set names utf8
+select * from category where cat_id=1
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select cat_id, cat_name, parent_id from category
+select goods_id, goods_name, shop_price, market_price, thumb_img from goods where cat_id in(1,2,3) order by add_time limit 0,2
