@@ -88,7 +88,7 @@
 		public function show() {
 			
 			// $this->perpage 不为 0
-			if ( !$this->perpage ) {
+			if ( $this->perpage ) {
 				$cnt = ceil($this->total / $this->perpage); // 总页数
 			}
 			
@@ -104,10 +104,32 @@
 			// 不管$param数组中是否存在 page单元，都unset一下，确保没有page单元，即保存出page之外的所有单元
 			unset($param['page']);
 			
-			// 计算页码导航
-			$url = $parse['path'] . '';
+			$url = $parse['path'] . '?';
+			if ( !empty($param) ) {
+				$param = http_build_query($param);
+				$url = $url . $param . '&';
+			}
 			
-							
+			// var_dump($url); // /tools/pagetool.class.php?cat=1&
+			
+			// 计算页码导航
+			// 加减页数
+			$nav = array();
+			
+			$nav[0] = '<span class="page_now">' . $this->page . '</span>'; // 当前页
+			// 核心方法
+			for ( $left = $this->page-1, $right = $this->page+1; ($left > 1 || $right < $cnt) && count($nav) < 5; ) { // 往左边  小于1， 往右边大于最大页码
+				if ( $left >= 1 ) {
+					array_unshift($nav, $url . 'page=' . $left);
+					$left -= 1;
+				}
+				if ( $right <= $cnt ) {
+					array_push($nav, $url . 'page=' . $right); 
+					$right+=1;
+				}
+			}
+			
+			print_r($nav);
 			
 		}
 	} 		 
