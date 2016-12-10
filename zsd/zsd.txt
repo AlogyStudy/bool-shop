@@ -224,3 +224,84 @@ session - cookie
 
 # 分页类
 
+```
+	/**
+	 * 商品数据 共 5 条 ， 每页 显示 2条
+	 * 
+	 * 共几页?
+	 * 共3页， 因为页数是整的.
+	 * 
+	 * 第一页显示第几条到第几条?
+	 * 1-2 条 
+	 * 
+	 * 第二页显示第几条到第几条?
+	 * 3-4 条
+	 *
+	 *  // ------
+	 * 
+	 * 分页原理的三个变量：
+	 * 总条目 $total
+	 * 每页条数 $perpage
+	 * 当前页  $page
+	 * 
+	 * 分页原理2个公式：
+	 * 总页数 $cnt = ceil($total / $perpage);
+	 * 
+	 * 第 $page页 ， 显示  第几条 到第几条?
+	 * 第 $page 页，说明前面已经翻过$page-1页，每页是 $perpage条
+	 * 所以：跳过了 ($page-1) * $perpage 条.
+	 * 即，从  ($page-1) * $perpage+1 条 开始取， 取$perpage 条出来
+	 *
+	 * 
+	 * 分页导航的生成
+	 * @exp 
+	 * category.php?cat_id=3&page=1
+	 * 
+	 * 存在可能情况
+	 * 1. category.php
+	 * 2. category.php?cat_id=2
+	 * 3. category.php?page=1 
+	 * 
+	 * 需要小心保护参数
+	 * 分页导航中:
+	 * [1] [2] 3 [4] [5] 
+	 * page参数 应该根据当前的页码来生成，但同时不能把其它参数弄丢，如$cat_id
+	 * 
+	 * 
+	 * 所以，需要先把地址栏的参数获取，并保存起来.(防止丢失)
+	 * 
+	 * 
+	 * 1. 保存参数
+	 * 2. 计算导航链接
+	 */
+```
+
+# 编辑器 UEditor
+
+```
+<pre>
+	编辑器步骤
+	1： 如何引入
+		下载
+		获取文件
+		script 载入文件
+		配置文件
+		
+	2： 如何个性化配置
+		* 可以修改底层配置文件
+		* 可以修改底层配置文件中对象的某些项 (单独写一个自己的配置文件)
+		* 可以修改底层配置文件中的options 传入 `new UE.ui.Editor()` 中
+	
+	var editor = new UE.ui.Editor();	
+	editor.render('goods_desc');
+	
+	console.log( editor.getContentTxt() );  // 获取纯文本
+	console.log( editor.getPlainTxt() ); // 获取
+
+	3： 如何与自己的系统整合
+		
+	载入文件
+	修改匹配系统的样式
+	修改配置文件，达到符合自己的需求
+</pre>
+```

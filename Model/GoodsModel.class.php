@@ -198,6 +198,32 @@
 			return $items;
 		} 
 		
+		/**
+		 * 取出 所有栏目
+		 * @param {Int} $cat_id  指定栏目id
+		 * @return 
+		 */
+		public function catGoodsCount( $cat_id ) {
+			$category = new CateModel();
+			$cats = $category->select(); // 所有栏目
+			$sons = $category->getCateTree($cats, $cat_id);
+			
+			$sub = array($cat_id);
+			
+			// 是否存在子栏目
+			if ( !empty($sons) ) { 
+				foreach ( $sons as $v ) {
+					$sub[] = $v['cat_id'];
+				}
+			}
+			
+			$in = implode(',', $sub);
+			
+			$sql = "select count(*) from goods where cat_id in (" . $in . ")";
+			return $this->db->getOne($sql);
+			
+		} 	
+		
 	}
 	 
 ?>
