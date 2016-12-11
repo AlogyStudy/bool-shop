@@ -11,6 +11,15 @@
 <link type="image/gif" href="animated_favicon.gif" rel="icon">
 <link type="text/css" rel="stylesheet" href="./view/front/css/style.css">
 
+<style type="text/css">
+	body, a, div, span, li, font {
+		font-family: "microsoft yahei";
+	}
+	.margin-top p {
+		margin-top: 10px;
+	}
+</style>
+
 </head>
 
 <body>
@@ -40,19 +49,30 @@
             <tr>
               <td bgcolor="#FFFFFF" align="center">
               <div style="text-align:center">
-              <form action="/pay/index.php" method="post">
-
-
-						商户编号<input type="text" name="v_mid" value="1009001" /><br />
-						订单编号<input type="text" name="v_oid" value="<?php echo $order_sn;?>"><br />
-						订单总金额<input type="text" name="v_amount" value="<?php echo $total;?>"> <br />
-						币种<input type="text" name="v_moneytype" value="CNY"><br />
-						回调地址<input type="text" name="v_url" value="<?php echo $v_url;?>"><br />
-						　　<input type=hidden name="v_md5info" value="<?php echo $v_md5info;?>"> 
-
-
-              <input type="submit" value="立即在线支付">
+              
+              <!--action="http://pay3.chinebank.com.cn/PayGate"-->
+              <form action="/pay/index.php" method="post" class="margin-top">
+              <!--<form action="http://pay3.chinabank.com.cn/PayGate" method="post" class="margin-top">-->
+              	<p>
+	              	商户编号：<input type="text" name="v_mid" value="1009001" /> <br />
+              	</p>
+              	<p>
+	              	订单编号：<input type="text" name="v_oid" value="<?php echo $order_sn; ?>" /> <br />
+              	</p>
+              	<p>
+	              	订单总金额：<input type="text" name="v_amount" value="<?php echo $total; ?>" /><br />
+              	</p>
+              	<p>
+	              	币种 <input type="text" name="v_moneytype" value="CNY" /> <br />
+              	</p>
+              	<p>
+	              	回调地址 <input type="text" name="v_url" value="<?php echo $v_url; ?>" /><br />
+              	</p>
+              	<input type="hidden" name="v_md5info" value="<?php echo $v_md5info; ?>" /> <br />
+              	<br />
+              	<input type="submit" value="立即在线支付" />
               </form>
+              
               </div>
               </td>
             </tr>

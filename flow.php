@@ -204,6 +204,18 @@
 			exit;
 		}
 		
+		/********** 在线支付 md5加密 **********/
+		// 订单总金额  币种  订单编号	商户编号  回调地址  密钥
+		// v_amonut v_moneytype v_oid v_mid v_url key  // 中间不允许有空格
+		$v_amonut = $total;
+		$v_moneytype = 'CNY';
+		$v_oid = $order_sn;
+		$v_mid = '1009001'; // 20272562
+		$v_url = 'http://www.bool.com/recive.php'; // 回调url 
+		$key = '#(%#WU)(UFGDKJGNDFG'; // 密钥
+		$v_md5info = strtoupper(md5($v_amonut . $v_moneytype . $v_oid . $v_mid . $v_url . $key));  
+		/********** 在线支付 md5加密 **********/
+		
 		// 下订单成功 (清空购物车，商品数量减少)
 		$cart->clearItem();
 		include(ROOT . 'view/front/order.html');
